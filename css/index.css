@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+
 html {
   font-size: 62.5%;
 }
@@ -8,7 +11,7 @@ html {
   --secondary-color: #172432;
   --tertiary-color: #f1f1f1;
   --principal-color-background: #f1f1f1;
-  --principal-color-background: #172432 ;
+  --secondary-color-background: #172432 ;
 }
 
 header {
@@ -24,6 +27,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   font-family: 'Rubik';
+  position: absolute;
 }
 nav img {
   width: 23.4rem;
@@ -62,8 +66,6 @@ nav div {
   justify-content: space-between;
   align-items: center;
 }
-nav div .loginHeader{
-}
 nav div a {
   font-size: 2rem;
   text-decoration: none;
@@ -77,6 +79,51 @@ nav div button{
   border-radius: 1.2rem;
 }
 
+/* Container de texto e Inputs de datas do voo */
 
+.containerHeader {
+  height: 80%;
+  display: grid;
+  grid-template-columns: 18.2rem 1fr 18.2rem;
+  grid-template-rows: 27rem 50% 50% 27rem;
+  color: var(--tertiary-color);
+}
+.containerTextHeader {
+  grid-column: 2/3;
+  grid-row: 2;
+  height: 26.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.containerTextHeader div h1{
+  font-family: 'Playfair Display';
+  font-size: 8.4rem;
+}
+.containerTextHeader p {
+  font-family: 'Rubik';
+  font-size: 2.4rem;
+}
+
+
+
+.containerInputsHeader {
+  grid-column: 1/3;
+  grid-row: 3;
+  width: 147.3rem;
+  height: 21.6rem;
+  display: grid;
+  grid-template-columns: 18.2rem 100% 17rem;
+
+  background-color: var(--principal-color-background);
+}
+.contentInputsHeader {
+  grid-template-columns: 1/3;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+  background-color: red;
+}
 
 
