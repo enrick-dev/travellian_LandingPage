@@ -48,10 +48,10 @@ nav ul li {
   font-weight: 400;
   cursor: pointer;
 }
-nav ul li:nth-child(1){
+nav ul li:first-child{
   font-weight: 500;
 }
-nav ul li:nth-child(1)::after {
+nav ul li:first-child::after {
   content: '';
   display: block;
   margin-top: 0.4rem;
@@ -223,7 +223,7 @@ main section {
 
   background-color: var(--principal-color-background);
 }
-.destinations div:nth-child(1) {
+.destinations div:first-child {
   grid-column: 2;
   grid-row: 2;
   align-self: flex-start;
@@ -232,7 +232,7 @@ main section {
   display: flex;
   justify-content: space-between;
 }
-.destinations div:nth-last-child(1) {
+.destinations div:last-child {
   grid-column: 2/4;
   grid-row: 2;
   align-self: flex-end;
@@ -272,23 +272,22 @@ main section {
   border: none;
   border-radius: 1.2rem;
 }
-.buttonsSliderDestin button:nth-child(1) {
+.buttonsSliderDestin button:first-child {
   background-color: var(--secondary-color-background);
 }
-.buttonsSliderDestin button:nth-last-child(1) {
+.buttonsSliderDestin button:last-child {
   background-color: var(--tertiary-color-background);
 }
 .buttonsSliderDestin button img {
   width: 1rem;
   height: 2rem;
 }
-.buttonsSliderDestin button:nth-last-child(1) img {
+.buttonsSliderDestin button:last-child img {
   rotate: 180deg;
 }
 
 
-
-
+/* Galeria de imagens do "Detinations"  */
 .containerGalerySliderDestin {
   display: flex;
 }
@@ -302,7 +301,7 @@ main section {
   object-fit: cover;
   border-radius: 2.6rem;
 }
-.containerGalerySliderDestin figure:nth-last-child(1) img {
+.containerGalerySliderDestin figure:last-child img {
   width: 15.1rem;
   border-radius: 2.6rem 0rem 0rem 2.6rem;
 }
@@ -317,7 +316,7 @@ main section {
   margin: 0rem 0rem 4rem 2.4rem;
   color: var(--tertiary-color);
 }
-.containerGalerySliderDestin figure figcaption p:nth-child(1) {
+.containerGalerySliderDestin figure figcaption p:first-child {
   font-family: 'Playfair Display';
   font-size: 2.8rem;
   font-weight: 500;
@@ -325,6 +324,8 @@ main section {
 .containerGalerySliderDestin figure figcaption p:last-child {
   font-family: 'Rubik';
   font-size: 2.4rem;
+  display: flex;
+  align-items: center;
 }
 .containerGalerySliderDestin figure figcaption p:last-child::before {
   content: url(../assets/logo_and_icons/locationGalery.svg);
@@ -332,3 +333,6 @@ main section {
   height: 2.4rem;
   margin-right: 1.6rem;
 }
+
+
+
