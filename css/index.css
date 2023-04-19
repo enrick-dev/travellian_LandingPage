@@ -10,7 +10,8 @@ html {
   --principal-color: #FF7757;
   --secondary-color: #172432;
   --tertiary-color: #f1f1f1;
-  --principal-color-background: #f1f1f1;
+  --other-color-font: #767E86;
+  --principal-color-background: #fff;
   --secondary-color-background: #172432 ;
 }
 
@@ -79,8 +80,10 @@ nav div button{
   border-radius: 1.2rem;
 }
 
-/* Container de texto e Inputs de datas do voo */
 
+/* HEADER */
+
+/* Titulo/texto da header */
 .containerHeader {
   height: 80%;
   display: grid;
@@ -107,23 +110,106 @@ nav div button{
 
 
 
+/* Slider do Fundo */
+.sliderHeader {
+  grid-column: 3;
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
+}
+
+
+
+
+/* Container de texto e Inputs de datas do voo */
 .containerInputsHeader {
   grid-column: 1/3;
   grid-row: 3;
   width: 147.3rem;
   height: 21.6rem;
+  border-radius: 0% 2rem 2rem 0%;
   display: grid;
-  grid-template-columns: 18.2rem 100% 17rem;
+  grid-template-columns: 18.2rem 1fr 17rem;
 
   background-color: var(--principal-color-background);
 }
 .contentInputsHeader {
-  grid-template-columns: 1/3;
+  grid-column: 2;
   display: flex;
-  width: 100%;
   justify-content: space-around;
-
-  background-color: red;
+  align-items: center;
 }
+.contentInputsHeader div {
+  display: flex;
+  flex-direction: column;
+}
+.contentInputsHeader div label {
+  font-family: 'Rubik';
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: var(--other-color-font);
+}
+.contentInputsHeader div input {
+  width: 22.5rem;
+  height: 3.7rem;
+  outline: 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.1rem solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-family: 'Playfair Display';
+  font-size: 2rem;
+}
+.contentInputsHeader div:nth-child(2) input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.contentInputsHeader div:nth-child(4) input {
+  font-size: 1.8rem;
+}
+
+/* Submit(Book Now) */
+.bookNow {
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 0% 2rem 2rem 0%;
+
+  background-color: var(--principal-color);
+}
+.bookNow input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+
+  z-index: 10;
+  position: absolute;
+}
+.bookNow h2 {
+  font-family: 'Playfair Display';
+  font-size: 3.2rem;
+  width: 13rem;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bookNow h2::after {
+  content: url('../assets/logo_and_icons/arrow.svg');
+  align-self: center;
+  justify-self: center;
+  width: 2.1rem;
+}
+
+
+
+
+/* DESTINATIONS */
+
+
+
 
 
