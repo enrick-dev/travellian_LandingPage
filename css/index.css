@@ -209,7 +209,70 @@ nav div button{
 
 /* DESTINATIONS */
 
+main section {
+  background-color: red;
+}
+
+.destinations {
+  height: 120.6rem;
+
+  display: grid;
+  grid-template-columns: 18.2rem 1fr 18.2rem;
+  grid-template-rows: 14rem 1fr 14rem;
+
+  background-color: var(--principal-color-background);
+}
+.destinations div:nth-child(1) {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: flex-start;
+
+  
+  display: flex;
+  justify-content: space-between;
+}
+.destinations div:nth-child(2) {
+  grid-column: 2/4;
+  grid-row: 2;
+  align-self: flex-end;
+}
 
 
+.containerTextDestin {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 16.5rem;
+}
+.containerTextDestin h1 {
+  font-family: 'Playfair Display';
+  font-size: 6.4rem;
+  color: var(--secondary-color);
+}
+.containerTextDestin .breatherBar {
+  width: 36.5rem;
+  height: 0.3rem;
+  background-color: var(--principal-color);
+}
+.containerTextDestin p {
+  font-family: 'Rubik';
+  font-size: 2.4rem;
+  color: var(--other-color-font);
+}
 
+
+.containerGalerySliderDestin {
+  display: flex;
+}
+.containerGalerySliderDestin figure img {
+  width: 49.7rem;
+  height: 66.1rem;
+  object-fit: cover;
+  border-radius: 2.6rem;
+}
+.containerGalerySliderDestin figure:nth-last-child(1) img {
+  width: 15.1rem;
+  border-radius: 2.6rem 0rem 0rem 2.6rem;
+}
 
