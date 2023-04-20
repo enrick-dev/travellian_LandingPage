@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
 
 
 html {
@@ -14,6 +15,7 @@ html {
   --principal-color-background: #fff;
   --secondary-color-background: #172432 ;
   --tertiary-color-background: #FF7757 ;
+  --other-color-background: #FFF8F1 ;
 }
 
 header {
@@ -31,27 +33,27 @@ nav {
   font-family: 'Rubik';
   position: absolute;
 }
-nav img {
+nav>img {
   width: 23.4rem;
   height: 4.56rem;
 }
 
-nav ul {
+nav>ul {
   width: 41.7rem;
   display: flex;
   justify-content: space-between;
 
   color: var(--tertiary-color);
 }
-nav ul li {
+nav>ul>li {
   font-size: 2rem;
   font-weight: 400;
   cursor: pointer;
 }
-nav ul li:first-child{
+nav>ul>li:first-child{
   font-weight: 500;
 }
-nav ul li:first-child::after {
+nav>ul>li:first-child::after {
   content: '';
   display: block;
   margin-top: 0.4rem;
@@ -61,19 +63,19 @@ nav ul li:first-child::after {
 }
 
 /* Botões de Login e Cadastro do Header */
-nav div {
+nav>div {
   width: 22.2rem;
   height: 6.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav div a {
+nav>div a {
   font-size: 2rem;
   text-decoration: none;
   color: var(--tertiary-color);
 }
-nav div button{
+nav>div>button{
   width: 13.4rem;
   height: 100%;
   background-color: var(--principal-color);
@@ -100,7 +102,7 @@ nav div button{
   flex-direction: column;
   justify-content: space-around;
 }
-.containerTextHeader div h1{
+.containerTextHeader div>h1{
   font-family: 'Playfair Display';
   font-size: 8.4rem;
 }
@@ -144,13 +146,13 @@ nav div button{
   display: flex;
   flex-direction: column;
 }
-.contentInputsHeader div label {
+.contentInputsHeader div>label {
   font-family: 'Rubik';
   font-size: 1.6rem;
   text-transform: uppercase;
   color: var(--other-color-font);
 }
-.contentInputsHeader div input {
+.contentInputsHeader div>input {
   width: 22.5rem;
   height: 3.7rem;
   outline: 0;
@@ -161,11 +163,11 @@ nav div button{
   font-family: 'Playfair Display';
   font-size: 2rem;
 }
-.contentInputsHeader div:nth-child(2) input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+.contentInputsHeader div:nth-child(2)>input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.contentInputsHeader div:nth-child(4) input {
+.contentInputsHeader div:nth-child(4)>input {
   font-size: 1.8rem;
 }
 
@@ -211,7 +213,7 @@ nav div button{
 
 /* DESTINATIONS */
 
-main section {
+main>section {
   background-color: red;
 }
 
@@ -221,10 +223,11 @@ main section {
   display: grid;
   grid-template-columns: 18.2rem 1fr 18.2rem;
   grid-template-rows: 14rem 1fr 14rem;
+  justify-content: space-between;
 
   background-color: var(--principal-color-background);
 }
-.destinations div:first-child {
+.destinations .containerButtonsTextDestin {
   grid-column: 2;
   grid-row: 2;
   align-self: flex-start;
@@ -233,7 +236,7 @@ main section {
   display: flex;
   justify-content: space-between;
 }
-.destinations div:last-child {
+.destinations .containerGalerySliderDestin {
   grid-column: 2/4;
   grid-row: 2;
   align-self: flex-end;
@@ -266,6 +269,7 @@ main section {
   width: 17.2rem;
   display: flex;
   justify-content: space-between;
+  align-self: flex-end;
 }
 .buttonsSliderDestin button {
   width: 6.6rem;
@@ -280,35 +284,36 @@ main section {
 .buttonsSliderDestin button:last-child {
   background-color: var(--tertiary-color-background);
 }
-.buttonsSliderDestin button img {
+.buttonsSliderDestin button>img {
   width: 1rem;
   height: 2rem;
 }
-.buttonsSliderDestin button:last-child img {
+.buttonsSliderDestin button:last-child>img {
   rotate: 180deg;
 }
 
 
 /* Galeria de imagens do "Detinations"  */
-.containerGalerySliderDestin {
+.contentGalerySliderDestin {
   display: flex;
+  justify-content: space-between;
 }
-.containerGalerySliderDestin figure {
+.contentGalerySliderDestin figure {
   display: flex;
   position: relative;
 }
-.containerGalerySliderDestin figure img {
+.contentGalerySliderDestin figure>img {
   width: 49.7rem;
   height: 66.1rem;
   object-fit: cover;
   border-radius: 2.6rem;
 }
-.containerGalerySliderDestin figure:last-child img {
+.contentGalerySliderDestin figure:last-child>img {
   width: 15.1rem;
   border-radius: 2.6rem 0rem 0rem 2.6rem;
 }
 
-.containerGalerySliderDestin figure figcaption {
+.contentGalerySliderDestin figure>figcaption {
   position: absolute;
   height: 8.2rem;
   align-self: flex-end;
@@ -318,18 +323,18 @@ main section {
   margin: 0rem 0rem 4rem 2.4rem;
   color: var(--tertiary-color);
 }
-.containerGalerySliderDestin figure figcaption p:first-child {
+.contentGalerySliderDestin figure>figcaption p:first-child {
   font-family: 'Playfair Display';
   font-size: 2.8rem;
   font-weight: 500;
 }
-.containerGalerySliderDestin figure figcaption p:last-child {
+.contentGalerySliderDestin figure>figcaption p:last-child {
   font-family: 'Rubik';
   font-size: 2.4rem;
   display: flex;
   align-items: center;
 }
-.containerGalerySliderDestin figure figcaption p:last-child::before {
+.contentGalerySliderDestin figure>figcaption>p:last-child::before {
   content: url(../assets/logo_and_icons/locationGalery.svg);
   width: 2.4rem;
   height: 2.4rem;
@@ -350,16 +355,17 @@ main section {
   background-color: var(--principal-color-background);
 }
 
-.specialOffer div:first-child {
+.specialOffer .containerButtonsTextSpecial {
   grid-column: 2;
   grid-row: 2;
   align-self: flex-start;
-
-  
+    
+  height: 16.5rem;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
-.specialOffer div:last-child {
+.specialOffer .containerGalerySpecialOffer {
   grid-column: 2;
   grid-row: 2;
   align-self: flex-end;
@@ -371,7 +377,7 @@ main section {
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
-  height: 16.5rem;
+  height: 100%;
 }
 .containerTextSpecial h1 {
   font-family: 'Playfair Display';
@@ -388,6 +394,7 @@ main section {
   font-size: 2.4rem;
   color: var(--other-color-font);
 }
+
 
 
 .buttonsSliderSpecial {
@@ -408,10 +415,94 @@ main section {
 .buttonsSliderSpecial button:last-child {
   background-color: var(--tertiary-color-background);
 }
-.buttonsSliderSpecial button img {
+.buttonsSliderSpecial button>img {
   width: 1rem;
   height: 2rem;
 }
-.buttonsSliderSpecial button:last-child img {
+.buttonsSliderSpecial button:last-child>img {
   rotate: 180deg;
+}
+
+
+
+
+
+
+
+
+/* Galeria de produtos em oferta */
+.contentGalerySpecialOffer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contentGalerySpecialOffer figure {
+  width: 49.7rem;
+  height: 62.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  border-radius: 2.6rem 2.6rem 0rem 0rem;
+  background-color: var(--other-color-background);
+}
+.contentGalerySpecialOffer figure>img {
+  width: 100%;
+  height: 28.6rem;
+  object-fit: cover;
+  border-radius: 2.6rem 2.6rem 0rem 0rem;
+}
+.legendaImgSpecialOffer {
+  width: 90%;
+  height: 34.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+.legendaImgSpecialOffer h3 {
+  font-family: 'Mulish';
+  font-size: 2.8rem;
+   color: var(--other-color-font);
+}
+.ratingStars img {
+  width: 2rem;
+  height: 1.9rem;
+}
+.legendaImgSpecialOffer p {
+  font-family: 'Rubik';
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+}
+.valueAndButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.valueAndButton div {
+  width: 16.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Rubik';
+}
+.valueAndButton div>p {
+  font-size: 2rem;
+  color: var(--other-color-font);
+}
+.valueAndButton div>p:last-child {
+  font-size: 4rem;
+  color: var(--principal-color)
+}
+.valueAndButton button {
+  width: 15.9rem;
+  height: 6.4rem;
+  border-radius: 1.2rem;
+  font-family: 'Rubik';
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--tertiary-color);
+  background-color:var(--tertiary-color-background) ;
+  border: none;
+
 }
