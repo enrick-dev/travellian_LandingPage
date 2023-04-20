@@ -443,7 +443,7 @@ main>section {
   flex-direction: column;
   align-items: center;
   
-  border-radius: 2.6rem 2.6rem 0rem 0rem;
+  border-radius: 2.6rem;
   background-color: var(--other-color-background);
 }
 .contentGalerySpecialOffer figure>img {
@@ -455,10 +455,17 @@ main>section {
 .legendaImgSpecialOffer {
   width: 90%;
   height: 34.3rem;
+  padding: 4rem 0rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   
+}
+.legendaImgSpecialOffer>div:first-child {
+  height: 6.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .legendaImgSpecialOffer h3 {
   font-family: 'Mulish';
