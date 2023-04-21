@@ -213,10 +213,6 @@ nav>div>button{
 
 /* DESTINATIONS */
 
-main>section {
-  background-color: red;
-}
-
 .destinations {
   height: 120.6rem;
 
@@ -227,7 +223,7 @@ main>section {
 
   background-color: var(--principal-color-background);
 }
-.destinations .containerButtonsTextDestin {
+.destinations .containerButtonsTitleDestin {
   grid-column: 2;
   grid-row: 2;
   align-self: flex-start;
@@ -243,23 +239,23 @@ main>section {
 }
 
 /* Area de texto do "Detinations" */
-.containerTextDestin {
+.containerTitleDestin {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 16.5rem;
 }
-.containerTextDestin h1 {
+.containerTitleDestin h1 {
   font-family: 'Playfair Display';
   font-size: 6.4rem;
   color: var(--secondary-color);
 }
-.containerTextDestin .breatherBar {
+.containerTitleDestin .breatherBarDestin {
   width: 36.5rem;
   height: 0.3rem;
   background-color: var(--principal-color);
 }
-.containerTextDestin p {
+.containerTitleDestin p {
   font-family: 'Rubik';
   font-size: 2.4rem;
   color: var(--other-color-font);
@@ -355,7 +351,7 @@ main>section {
   background-color: var(--principal-color-background);
 }
 
-.specialOffer .containerButtonsTextSpecial {
+.specialOffer .containerButtonsTitleSpecial {
   grid-column: 2;
   grid-row: 2;
   align-self: flex-start;
@@ -372,30 +368,28 @@ main>section {
 }
 
 /* Area de texto do "Special Offer" */
-.containerTextSpecial {
+.containerTitleSpecial {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
   height: 100%;
 }
-.containerTextSpecial h1 {
+.containerTitleSpecial h1 {
   font-family: 'Playfair Display';
   font-size: 6.4rem;
   color: var(--secondary-color);
 }
-.containerTextSpecial .breatherBar {
-  width: 36.5rem;
+.containerTitleSpecial .breatherBarSpecial {
+  width: 24.1rem;
   height: 0.3rem;
   background-color: var(--principal-color);
 }
-.containerTextSpecial p {
+.containerTitleSpecial p {
   font-family: 'Rubik';
   font-size: 2.4rem;
   color: var(--other-color-font);
 }
-
-
 
 .buttonsSliderSpecial {
   width: 17.2rem;
@@ -422,13 +416,6 @@ main>section {
 .buttonsSliderSpecial button:last-child>img {
   rotate: 180deg;
 }
-
-
-
-
-
-
-
 
 /* Galeria de produtos em oferta */
 .contentGalerySpecialOffer {
@@ -511,5 +498,8 @@ main>section {
   color: var(--tertiary-color);
   background-color:var(--tertiary-color-background) ;
   border: none;
-
 }
+
+
+/* BLOG */
+
