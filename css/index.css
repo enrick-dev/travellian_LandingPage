@@ -503,3 +503,100 @@ nav>div>button{
 
 /* BLOG */
 
+.blog {
+  height: 141.8rem;
+
+  display: grid;
+  grid-template-columns: 18.2rem 1fr 18.2rem;
+  grid-template-rows: 14rem 1fr 14rem;
+
+  background-color: var(--principal-color-background);
+}
+.blog .containerTitleBlog {
+  grid-column: 2;
+  grid-row: 2;
+
+  align-self: flex-start;
+  height: 16.5rem;
+}
+.blog .containerBlogTextImg {
+  grid-column: 2;
+  grid-row: 2;
+
+  align-self: flex-end;
+}
+
+/* Area de container e texto do "blog" */
+.contentTitleBlog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.contentTitleBlog h1 {
+  font-family: 'Playfair Display';
+  font-size: 6.4rem;
+  color: var(--secondary-color);
+}
+.contentTitleBlog .breatherBarBlog {
+  width: 15rem;
+  height: 0.3rem;
+  background-color: var(--principal-color);
+}
+.contentTitleBlog p {
+  font-family: 'Rubik';
+  font-size: 2.4rem;
+  color: var(--other-color-font);
+}
+
+/* Area de container e imagem com legnda do "blog" */
+
+.contentBlogTextImg {
+  display: flex;
+  justify-content: space-between;
+}
+.containerBlogImg>img{
+  border-radius: 2.6rem;
+}
+.containerBlogText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contentBlogText {
+  width: 76.2rem;
+  height: 66rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contentBlogText>h3 {
+  font-family: 'Playfair Display';
+  font-size: 5.4rem;
+  color: var(--secondary-color);
+}
+.contentBlogText>p {
+  font-family: 'Rubik';
+  font-size: 2.4rem;
+  line-height: 5.2rem;
+  color: var(--secondary-color);
+}
+.contentBlogText>button {
+  font-family: 'Rubik';
+  font-size: 2.4rem;
+  align-self: flex-start;
+  cursor: pointer;
+
+  border: none;
+  background-color: transparent;
+  color: var(--principal-color);
+}
+.contentBlogText>button::after {
+  content: url('../assets/logo_and_icons/arrow_orange.svg');
+  width: 2.7rem;
+  height: 2rem;
+  margin-left: 2rem;
+}
+
+
+
