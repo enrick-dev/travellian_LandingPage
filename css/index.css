@@ -604,7 +604,7 @@ nav>div>button{
   height: 82.5rem;
 
   display: grid;
-  grid-template-columns: 18.2rem 1fr 18.2rem;
+  grid-template-columns: 18.2rem 1fr 2fr 18.2rem;
   grid-template-rows: 14rem 1fr 14rem;
 
   background-color: var(--principal-color-background);
@@ -621,7 +621,7 @@ nav>div>button{
   /* height: 37.6rem; */
 }
 .tripPlanners .containerGaleryTripPlanners {
-  grid-column: 2/4;
+  grid-column: 3/5;
   grid-row: 2;
 
   align-self: center;
@@ -654,15 +654,18 @@ nav>div>button{
 .containerBtnTripPlanners {
   width: 21.8rem;
   height: 9.15rem;
+  margin-top: 3.55rem;
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .containerBtnTripPlanners button {
   font-family: 'Rubik';
   font-size: 1.8rem;
   width: 18.6rem;
   height: 6.1rem;
+  cursor: pointer;
 
   border-radius: 1.2rem;
   border: none;
@@ -672,24 +675,33 @@ nav>div>button{
   z-index: 10;
 }
 .containerBtnTripPlanners>div:first-child {
+  width: 100%;
+  align-self: flex-start;
+
   display: flex;
+  flex-direction: column;
+  position: absolute;
 }
 .containerBtnTripPlanners>div:first-child>img {
-  position: absolute;
-  align-self: flex-end;
+  width: 4.3rem;
+  height: 4.3rem;
 
+  align-self: flex-start;
   z-index: 7;
 }
 .containerBtnTripPlanners>div:last-child {
+  width: 100%;
+  align-self: flex-end;
+
   display: flex;
-  margin-left: auto;
+  flex-direction: column;
   position: absolute;
-  display: none;
 }
 .containerBtnTripPlanners>div:last-child>img {
-  position: absolute;
-  align-items: flex-end;
+  width: 4.3rem;
+  height: 4.3rem;
 
+  align-self: flex-end;
   z-index: 9;
 }
 
