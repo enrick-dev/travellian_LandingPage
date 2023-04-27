@@ -613,17 +613,19 @@ nav>div>button{
 .tripPlanners .containerTitleTripPlanners {
   grid-column: 2;
   grid-row: 2;
-  align-self: center;
+  align-self: flex-end;
 
   display: flex;
   flex-direction: column;
   width: 39.4rem;
-  /* height: 37.6rem; */
+  padding-bottom: 2.8rem;
 }
 .tripPlanners .containerGaleryTripPlanners {
-  grid-column: 3/5;
+  grid-column: 3/10;
   grid-row: 2;
 
+  display: flex;
+  height: 54.5rem;
   align-self: center;
 }
 
@@ -706,4 +708,96 @@ nav>div>button{
 }
 
 
+/* Area da galeria do "Trip Planners" */
+.contentGaleryTripPlanners {
+  height: 100%;
+  overflow: hidden;
+  align-self: center;
+  
+  white-space: wrap;
+  display: flex;
+  align-items: center;
+  
+  
+}
+.contentGaleryTripPlanners>figure {
+  margin-left: 3.2rem;
+  width: 30rem;
+  height: 100%;
+  position: relative;
 
+  cursor: pointer;
+  display: flex;
+  
+}
+.contentGaleryTripPlanners>figure>img {
+  align-self: center;
+  z-index: 10;
+
+  width: 30rem;
+  height: 39.9rem;
+  border-radius: 2.6rem;
+  
+}
+
+.contentGaleryTripPlanners>figure>figcaption {
+  width: 100%;
+  height: 14.6rem;
+  position: absolute;
+  align-self: center;
+
+  font-family: 'Rubik';
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  z-index: 1;
+  
+}
+@keyframes cardFigcaptionAnimate {
+  0%{transform: translateY(0rem)}
+  100%{transform: translateY(140%)}
+}
+@keyframes cardImgAnimate {
+  0%{transform: translateY(0rem)}
+  100%{transform: translateY(-7.3rem)}
+}
+
+/* animação do card */
+
+.contentGaleryTripPlanners>figure:hover>img {
+  animation-name: cardImgAnimate;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translateY(-7.3rem)
+}
+.contentGaleryTripPlanners figure:hover>figcaption{
+  animation-name: cardFigcaptionAnimate;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translateY(140%)
+}
+
+
+.textValue {
+  display: flex;
+  justify-content: space-between;
+}
+.textValue>p:first-child {
+  text-transform: uppercase;
+}
+.contentGaleryTripPlanners>figure>figcaption>h3 {
+  font-family: 'Playfair Display';
+  font-weight: 600;
+  font-size: 2.8rem;
+}
+.ratingStarsTripPlanners {
+  display: flex;
+  justify-content: space-between;
+}
+.ratingStarsTripPlanners>div:first-child img {
+  padding-left: 0.4rem;
+}
