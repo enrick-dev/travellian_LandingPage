@@ -429,12 +429,12 @@ nav>div>button{
 /* Galeria de produtos em oferta */
 .contentGalerySpecialOffer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .contentGalerySpecialOffer figure {
   width: 49.7rem;
   height: 62.9rem;
+  margin-right: 3.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -779,13 +779,13 @@ nav>div>button{
 
 .contentGaleryTripPlanners>figure:hover>img {
   animation-name: cardImgAnimate;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   transform: translateY(-7.3rem)
 }
 .contentGaleryTripPlanners figure:hover>figcaption{
   animation-name: cardFigcaptionAnimate;
-  animation-duration: 1s;
+  animation-duration: 0.6s;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   transform: translateY(140%)
 }
@@ -810,3 +810,119 @@ nav>div>button{
 .ratingStarsTripPlanners>div:first-child img {
   padding-left: 0.4rem;
 }
+
+
+
+/* DESTINATION GALLERY PEOPLES */
+
+.destinGaleryPeoples {
+  height: 119rem;
+
+  display: grid;
+  grid-template-columns: 18.2rem 1fr 18.2rem;
+  grid-template-rows: 14rem 1fr 14rem;
+
+  background-color: var(--principal-color-background);
+}
+
+.destinGaleryPeoples .containerButtonsTitleDestinPeoples {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: flex-start;
+    
+  height: 16.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.destinGaleryPeoples .containerGalerySliderDestinPeoples {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: flex-end;
+  overflow: hidden;
+}
+
+/* Area de texto da "Destination Gallery" */
+.containerTitleDestinPeoples {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 16.5rem;
+}
+.containerTitleDestinPeoples h1 {
+  font-family: 'Playfair Display';
+  font-size: 6.4rem;
+  color: var(--secondary-color);
+}
+.containerTitleDestinPeoples .breatherBarDestinPeoples {
+  width: 28.3rem;
+  height: 0.3rem;
+  background-color: var(--principal-color);
+}
+.containerTitleDestinPeoples p {
+  font-family: 'Rubik';
+  font-size: 2.4rem;
+  color: var(--other-color-font);
+}
+
+/* Botões da area de texto do "Destination Gallery" */
+.buttonsSliderDestinPeoples {
+  width: 17.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+.buttonsSliderDestinPeoples button {
+  width: 6.6rem;
+  height: 6rem;
+  border: none;
+  border-radius: 1.2rem;
+  cursor: pointer;
+}
+.buttonsSliderDestinPeoples button:first-child {
+  background-color: var(--secondary-color-background);
+}
+.buttonsSliderDestinPeoples button:last-child {
+  background-color: var(--tertiary-color-background);
+}
+.buttonsSliderDestinPeoples button>img {
+  width: 1rem;
+  height: 2rem;
+}
+.buttonsSliderDestinPeoples button:last-child>img {
+  rotate: 180deg;
+}
+
+
+/* Galeria de imagens do "Detinations Gallery"  */
+.contentGalerySliderDestinPeoples {
+  width: 100%;
+  height: 64.5rem;
+  display: flex;
+}
+
+.contentGalerySliderDestinPeoples figure{
+  width: 36.5rem;
+  height: 57rem;
+  margin-right: 3.2rem;
+  align-self: center;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.contentGalerySliderDestinPeoples figure:hover {
+  transform: translateY(-3.75rem);
+}
+.contentGalerySliderDestinPeoples figure>img {
+  width: 36.5rem;
+  height: 57rem;
+  border-radius: 2.6rem;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
