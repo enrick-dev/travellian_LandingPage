@@ -1,25 +1,25 @@
-const sliderCarousel = document.querySelector('.contentGaleryTripPlanners')
+const sliderCarouselTrip = document.querySelector('.contentGaleryTripPlanners')
 
 
-let isCursorStart = false, prevPageX, prevScrollLeft;
+let isCursorStartTrip = false, prevPageXTrip, prevScrollLeftTrip;
 
-const cursorStart = (moviment) => {
-  isCursorStart = true;
-  prevPageX = moviment.pageX;
-  prevScrollLeft = sliderCarousel.scrollLeft;
+const cursorStartTrip = (moviment) => {
+  isCursorStartTrip = true;
+  prevPageXTrip = moviment.pageX;
+  prevScrollLeftTrip = sliderCarouselTrip.scrollLeft;
 }
 
-const cursorOnn = (moviment) => {
-  if(!isCursorStart) return;
+const cursorOnnTrip = (moviment) => {
+  if(!isCursorStartTrip) return;
   moviment.preventDefault();
-  let position = moviment.pageX - prevPageX;
-  sliderCarousel.scrollLeft = prevScrollLeft - position;
+  let positionTrip = moviment.pageX - prevPageXTrip;
+  sliderCarouselTrip.scrollLeft = prevScrollLeftTrip - positionTrip;
 }
 
-const cursorEnd = () => {
-  isCursorStart = false;
+const cursorEndTrip = () => {
+  isCursorStartTrip = false;
 }
 
-sliderCarousel.addEventListener('mousedown', cursorStart);
-sliderCarousel.addEventListener('mousemove', cursorOnn);
-sliderCarousel.addEventListener('mouseup', cursorEnd);
+sliderCarouselTrip.addEventListener('mousedown', cursorStartTrip);
+sliderCarouselTrip.addEventListener('mousemove', cursorOnnTrip);
+sliderCarouselTrip.addEventListener('mouseup', cursorEndTrip);
