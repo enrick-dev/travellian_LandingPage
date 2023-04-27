@@ -297,10 +297,10 @@ nav>div>button{
   overflow: hidden;
   cursor: grab;
 }
-.contentGalerySliderDestin.cursorOnn {
+.contentGalerySliderDestin.cursorOnnDestin {
   scroll-behavior: auto;
 }
-.contentGalerySliderDestin.cursorOnn figure{
+.contentGalerySliderDestin.cursorOnnDestin figure{
   cursor: grab;
   pointer-events: none;
 }
@@ -429,7 +429,8 @@ nav>div>button{
 /* Galeria de produtos em oferta */
 .contentGalerySpecialOffer {
   display: flex;
-  align-items: center;
+  width: 155.6rem;
+  overflow: hidden;
 }
 .contentGalerySpecialOffer figure {
   width: 49.7rem;
@@ -443,7 +444,7 @@ nav>div>button{
   background-color: var(--other-color-background);
 }
 .contentGalerySpecialOffer figure>img {
-  width: 100%;
+  width: 49.7rem;
   height: 28.6rem;
   object-fit: cover;
   border-radius: 2.6rem 2.6rem 0rem 0rem;
@@ -839,7 +840,6 @@ nav>div>button{
   grid-column: 2;
   grid-row: 2;
   align-self: flex-end;
-  overflow: hidden;
 }
 
 /* Area de texto da "Destination Gallery" */
@@ -896,9 +896,19 @@ nav>div>button{
 
 /* Galeria de imagens do "Detinations Gallery"  */
 .contentGalerySliderDestinPeoples {
-  width: 100%;
+  width: 155.6rem;
   height: 64.5rem;
   display: flex;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  cursor: grab;
+}
+.contentGalerySliderDestinPeoples.cursorOnnDestinPeoples {
+  scroll-behavior: auto;
+}
+.contentGalerySliderDestinPeoples.cursorOnnDestinPeoples figure{
+  cursor: grab;
+  pointer-events: none;
 }
 
 .contentGalerySliderDestinPeoples figure{
@@ -917,6 +927,11 @@ nav>div>button{
   border-radius: 2.6rem;
   cursor: pointer;
 }
+
+
+
+
+
 
 
 

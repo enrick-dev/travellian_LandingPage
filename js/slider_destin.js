@@ -1,19 +1,19 @@
 const sliderCarouselDestin = document.querySelector('.contentGalerySliderDestin'),
-firstFigure = sliderCarouselDestin.querySelectorAll('.contentGalerySliderDestin figure')[0];
-const arrowButtons = document.querySelectorAll('.buttonsSliderDestin button');
+firstFigureDestin = sliderCarouselDestin.querySelectorAll('.contentGalerySliderDestin figure')[0];
+const arrowButtonsDestin = document.querySelectorAll('.buttonsSliderDestin button');
 
 
 let isCursorStartDestin = false, prevPageXDestin, prevScrollLeftDestin;
-firstFigureWidth = firstFigure.clientWidth + 32;
+firstFigureWidthDestin = firstFigureDestin.clientWidth + 32;
 
-arrowButtons.forEach(iconDestin => {
+arrowButtonsDestin.forEach(iconDestin => {
   iconDestin.addEventListener('click', () => {
-    sliderCarouselDestin.scrollLeft += iconDestin.id == 'left' ? - firstFigureWidth : firstFigureWidth;
+    sliderCarouselDestin.scrollLeft += iconDestin.id == 'left' ? - firstFigureWidthDestin : firstFigureWidthDestin;
   })
 })
 
 const cursorStartDestin = (moviment) => {
-  sliderCarouselDestin.classList.add('cursorOnn');
+  sliderCarouselDestin.classList.add('cursorOnnDestin');
   isCursorStartDestin = true;
   prevPageXDestin = moviment.pageX;
   prevScrollLeftDestin = sliderCarouselDestin.scrollLeft;
@@ -27,7 +27,7 @@ const cursorOnnDestin = (moviment) => {
 }
 
 const cursorEndDestin = () => {
-  sliderCarouselDestin.classList.remove('cursorOnn');
+  sliderCarouselDestin.classList.remove('cursorOnnDestin');
   isCursorStartDestin = false;
 }
 
