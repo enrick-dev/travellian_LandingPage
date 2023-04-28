@@ -430,8 +430,18 @@ nav>div>button{
 .contentGalerySpecialOffer {
   display: flex;
   width: 155.6rem;
+  scroll-behavior: smooth;
   overflow: hidden;
 }
+.contentGalerySpecialOffer.cursorOnnSpecialOffer {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.contentGalerySpecialOffer.cursorOnnSpecialOffer figure{
+  cursor: grab;
+  pointer-events: none;
+}
+
 .contentGalerySpecialOffer figure {
   width: 49.7rem;
   height: 62.9rem;
@@ -508,6 +518,7 @@ nav>div>button{
   color: var(--tertiary-color);
   background-color:var(--tertiary-color-background) ;
   border: none;
+  cursor: pointer;
 }
 
 
