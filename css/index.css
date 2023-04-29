@@ -131,7 +131,6 @@ nav>div>button{
 .containerInputsHeader {
   grid-column: 1/3;
   grid-row: 3;
-  width: 147.3rem;
   height: 21.6rem;
   border-radius: 0% 2rem 2rem 0%;
   display: grid;
@@ -355,10 +354,11 @@ nav>div>button{
 /* SPECIAL OFFER */
 
 .specialOffer {
+  
   height: 117.4rem;
 
   display: grid;
-  grid-template-columns: 18.2rem 1fr 18.2rem;
+  grid-template-columns: 18.2rem calc(100vw - (18.2rem*2)) 18.2rem;
   grid-template-rows: 14rem 1fr 14rem;
 
   background-color: var(--principal-color-background);
@@ -378,6 +378,7 @@ nav>div>button{
   grid-column: 2;
   grid-row: 2;
   align-self: flex-end;
+  width: 100%;
 }
 
 /* Area de texto do "Special Offer" */
@@ -434,8 +435,8 @@ nav>div>button{
 /* Galeria de produtos em oferta */
 .contentGalerySpecialOffer {
   display: flex;
-  width: 155.6rem;
   scroll-behavior: smooth;
+  width: 100%;
   overflow: hidden;
 }
 .contentGalerySpecialOffer.cursorOnnSpecialOffer {
@@ -582,16 +583,22 @@ nav>div>button{
   display: flex;
   justify-content: space-between;
 }
+.containerBlogImg {
+  width: 50%;
+}
 .containerBlogImg>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 2.6rem;
 }
 .containerBlogText {
+  width: 48%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .contentBlogText {
-  width: 76.2rem;
   height: 66rem;
   display: flex;
   flex-direction: column;
@@ -830,7 +837,7 @@ nav>div>button{
   height: 119rem;
 
   display: grid;
-  grid-template-columns: 18.2rem 1fr 18.2rem;
+  grid-template-columns: 18.2rem calc(100vw - (18.2rem*2)) 18.2rem;
   grid-template-rows: 14rem 1fr 14rem;
 
   background-color: var(--principal-color-background);
@@ -906,7 +913,7 @@ nav>div>button{
 
 /* Galeria de imagens do "Detinations Gallery"  */
 .contentGalerySliderDestinPeoples {
-  width: 155.6rem;
+  width: 100%;
   height: 64.5rem;
   display: flex;
   scroll-behavior: smooth;
@@ -1217,6 +1224,7 @@ footer {
 .contentFooter {
   width: 155.6rem;
   height: 19.7rem;
+  margin: 0rem 3.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
