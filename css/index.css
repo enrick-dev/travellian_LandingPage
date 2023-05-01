@@ -17,22 +17,27 @@ html {
   --secondary-color-background: #172432 ;
   --tertiary-color-background: #FF7757 ;
   --other-color-background: #FFF8F1 ;
+
+  --margin-left-containers: 18.2rem;
+  --margin-right-containers: 18.2rem;
 }
 
 header {
-  background-image: url('../assets/backgrounds/backgroundHeader.png');
-  background-size: cover;
+  /* background-image: url('../assets/backgrounds/backgroundHeader.png');
+  background-size: cover; */
   height: 100vh;
 }
 /* barra de navegação */
 nav {
-  width: 100%;
+  width: calc(100% - (18.2rem*2));
   height: 12.8rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0rem 18.2rem;
   font-family: 'Rubik';
   position: absolute;
+  z-index: 10;
 }
 nav>img {
   width: 23.4rem;
@@ -91,9 +96,10 @@ nav>div>button{
 .containerHeader {
   height: 80%;
   display: grid;
-  grid-template-columns: 18.2rem 1fr 18.2rem;
-  grid-template-rows: 27rem 50% 50% 27rem;
+  grid-template-columns: var(--margin-left-containers) 1fr var(--margin-right-containers);
+  grid-template-rows: calc(100vh / 4.8) 50% 50% calc(100vh / 4);
   color: var(--tertiary-color);
+  z-index: 10;
 }
 .containerTextHeader {
   grid-column: 2/3;
@@ -102,6 +108,7 @@ nav>div>button{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  z-index: 10;
 }
 .containerTextHeader div>h1{
   font-family: 'Playfair Display';
@@ -117,11 +124,37 @@ nav>div>button{
 
 
 /* Slider do Fundo */
-.sliderHeader {
+.contentSliderHeader {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+.contentSliderHeader img {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  filter: brightness(60%);
+}
+.contentSliderHeader img {
+  opacity: 0;
+}
+.contentSliderHeader img:nth-child(1) {
+  opacity: 1;
+}
+.contentSliderHeader img:nth-child(1) {
+  filter: brightness(100%);
+}
+.menuSliderHeader {
   grid-column: 3;
   grid-row: 2;
   align-self: center;
   justify-self: center;
+  z-index: 10;
 }
 
 
@@ -129,14 +162,16 @@ nav>div>button{
 
 /* Container de texto e Inputs de datas do voo */
 .containerInputsHeader {
+  width: 100%;
   grid-column: 1/3;
   grid-row: 3;
   height: 21.6rem;
   border-radius: 0% 2rem 2rem 0%;
   display: grid;
-  grid-template-columns: 18.2rem 1fr 17rem;
+  grid-template-columns: var(--margin-left-containers) 1fr 17rem;
 
   background-color: var(--principal-color-background);
+  z-index: 10;
 }
 .contentInputsHeader {
   grid-column: 2;
@@ -155,7 +190,8 @@ nav>div>button{
   color: var(--other-color-font);
 }
 .contentInputsHeader div>input {
-  width: 22.5rem;
+  width: 95%;
+  max-width: 22.5rem;
   height: 3.7rem;
   outline: 0;
   background-color: transparent;
@@ -219,7 +255,7 @@ nav>div>button{
   height: 120.6rem;
 
   display: grid;
-  grid-template-columns: 18.2rem 1fr 18.2rem;
+  grid-template-columns: var(--margin-left-containers) 1fr var(--margin-right-containers);
   grid-template-rows: 14rem 1fr 14rem;
   justify-content: space-between;
 
@@ -358,7 +394,7 @@ nav>div>button{
   height: 117.4rem;
 
   display: grid;
-  grid-template-columns: 18.2rem calc(100vw - (18.2rem*2)) 18.2rem;
+  grid-template-columns: var(--margin-left-containers) calc(100vw - (18.2rem*2)) var(--margin-right-containers);
   grid-template-rows: 14rem 1fr 14rem;
 
   background-color: var(--principal-color-background);
@@ -534,7 +570,7 @@ nav>div>button{
   height: 141.8rem;
 
   display: grid;
-  grid-template-columns: 18.2rem 1fr 18.2rem;
+  grid-template-columns: var(--margin-left-containers) 1fr var(--margin-right-containers);
   grid-template-rows: 14rem 1fr 14rem;
 
   background-color: var(--principal-color-background);
@@ -639,7 +675,7 @@ nav>div>button{
   height: 82.5rem;
 
   display: grid;
-  grid-template-columns: 18.2rem 1fr 2fr 18.2rem;
+  grid-template-columns: var(--margin-left-containers) 1fr 2fr var(--margin-right-containers);
   grid-template-rows: 14rem 1fr 14rem;
 
   background-color: var(--principal-color-background);
@@ -837,7 +873,7 @@ nav>div>button{
   height: 119rem;
 
   display: grid;
-  grid-template-columns: 18.2rem calc(100vw - (18.2rem*2)) 18.2rem;
+  grid-template-columns: var(--margin-left-containers) calc(100vw - (18.2rem*2)) var(--margin-right-containers);
   grid-template-rows: 14rem 1fr 14rem;
 
   background-color: var(--principal-color-background);
@@ -952,7 +988,7 @@ nav>div>button{
   height: 123.8rem;
 
   display: grid;
-  grid-template-columns: 18.2rem 1fr 18.2rem;
+  grid-template-columns: var(--margin-left-containers) 1fr var(--margin-right-containers);
   grid-template-rows: 14rem 1fr 24rem;
 
   background-color: var(--principal-color-background);

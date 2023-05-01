@@ -1,0 +1,19 @@
+@media (max-width: 1600px) {
+  .contentBlogText>p {
+    line-height: 4.2rem;
+  }
+}
+@media (max-width: 1440px) {
+  :root {
+    --margin-left-containers: 3.2rem;
+    --margin-right-containers: 3.2rem;
+  }
+  nav {
+    width: calc(100% - (3.2rem*2));
+    padding: 0rem 3.2rem;
+  }
+
+  .containerInputsHeader {
+    width: 85%;
+  }
+}
