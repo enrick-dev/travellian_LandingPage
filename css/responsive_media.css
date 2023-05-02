@@ -7,6 +7,7 @@
   :root {
     --margin-left-containers: 3.2rem;
     --margin-right-containers: 3.2rem;
+    --fr1-calc-spec-and-destPeople: calc(100vw - (3.2rem*2));
   }
   nav {
     width: calc(100% - (3.2rem*2));
@@ -15,5 +16,26 @@
 
   .containerInputsHeader {
     width: 85%;
+  }
+
+  #blog {
+    height: 134.7rem;
+  }
+  #destinGaleryPeoples {
+    height: 108.8rem;
+  }
+  #travelerExperiences {
+    height: 126.1rem;
+  }
+
+  
+  .newsletter {
+    width: 118rem;
+  }
+}
+@media (max-width: 1350px) {
+
+  .newsletter {
+    width: 110rem;
   }
 }
