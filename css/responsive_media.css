@@ -1,0 +1,171 @@
+@media (max-width: 1600px) {
+  .contentBlogText>p {
+    line-height: 4.2rem;
+  }
+}
+@media (max-width: 1440px) {
+  :root {
+    --margin-left-containers: 3.2rem;
+    --margin-right-containers: 3.2rem;
+    --fr1-calc-spec-and-destPeople: calc(100vw - (3.2rem*2));
+  }
+  nav {
+    width: calc(100% - (3.2rem*2));
+    padding: 0rem 3.2rem;
+  }
+
+  .containerInputsHeader {
+    width: 85%;
+  }
+
+  .contentGalerySpecialOffer figure {
+    width: 43.7rem;
+    height: 62.9rem;
+  }
+  .contentGalerySpecialOffer figure>img {
+    width: 43.7rem;
+    height: 28.6rem;
+  }
+
+  .newsletter {
+    width: 118rem;
+  }
+
+
+
+  #blog {
+    height: 134.7rem;
+  }
+  #destinGaleryPeoples {
+    height: 108.8rem;
+  }
+  #travelerExperiences {
+    height: 126.1rem;
+  }
+
+}
+@media (max-width: 1350px) {
+  .newsletter {
+    width: 110rem;
+  }
+}
+@media (max-width: 1150px) {
+  :root {
+    --margin-top-containers: 10rem;
+    --margin-bottom-containers: 10rem;
+  }
+
+  .containerTextHeader div>h1{
+    font-size: 6.4rem;
+  }
+  .containerInputsHeader {
+    width: 95%;
+  }
+  
+  .contentGalerySpecialOffer figure {
+    width: 34.1rem;
+    height: 62.9rem;
+  }
+  .contentGalerySpecialOffer figure>img {
+    width: 34.1rem;
+    height: 28.6rem;
+  }
+  .valueAndButton div>p {
+    font-size: 1.8rem;
+  }
+  .valueAndButton div>p:last-child {
+    font-size: 2.8rem;
+  }
+  .valueAndButton button {
+    width: 12.7rem;
+    height: 5.6rem;
+    font-size: 2rem;
+  }
+  
+  
+  .contentBlogText {
+    height: 62.2rem;
+  }
+  .contentBlogText>p {
+    font-size: 1.8rem;
+    line-height: 4.2rem;
+  }
+
+  #tripPlanners .containerTitleTripPlanners {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    transform: translateY(8rem);
+  }
+  #tripPlanners .containerGaleryTripPlanners {
+    height: 54.5rem;
+    align-self: center;
+  }
+  .contentGaleryTripPlanners>figure {
+    width: 25rem;
+    height: 100%;
+    
+  }
+  .contentGaleryTripPlanners>figure>img {
+    width: 25rem;
+    height: 35rem;
+    border-radius: 2.6rem;
+    
+  }
+
+  
+  .contentGalerySliderDestinPeoples {
+    height: 42.6rem;
+  }
+  
+  .contentGalerySliderDestinPeoples figure{
+    width: 24.8rem;
+    height: 35.1rem;
+  }
+  .contentGalerySliderDestinPeoples figure:hover {
+    transform: translateY(-3.75rem);
+  }
+  .contentGalerySliderDestinPeoples figure>img {
+    width: 24.8rem;
+    height: 35.1rem;
+  }
+  
+  
+  #travelerExperiences .containerComentsClients {
+    height: calc(35.9rem + 7.5rem) ;
+  }
+  .containerComentsTravelerExperiences {
+    width: 50rem;
+    height: 35.9rem;
+  }
+  .containerComentsTravelerExperiences>p {
+    width: 50rem;
+    font-family: 'Rubik';
+    font-size: 1.8rem;
+  }
+
+  .newsletter {
+    width: 108rem;
+  }
+
+
+  #destinations {
+    height: 115.4rem;
+  }
+  #specialOffer {
+    height: 108.8rem;
+  }
+  #blog {
+    height: 115.1rem;
+  }
+  #tripPlanners {
+    height: 69.6rem;
+  }
+  #destinGaleryPeoples {
+    height: 89.1rem;
+  }
+  #travelerExperiences {
+    height: 120.4rem;
+  }
+
+}

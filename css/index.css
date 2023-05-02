@@ -5,6 +5,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -17,22 +18,32 @@ html {
   --secondary-color-background: #172432 ;
   --tertiary-color-background: #FF7757 ;
   --other-color-background: #FFF8F1 ;
+
+  
+  --margin-top-containers: 14rem;
+  --margin-bottom-containers: 14rem;
+  --margin-left-containers: 18.2rem;
+  --margin-right-containers: 18.2rem;
+  --fr1-calc-spec-and-destPeople: calc(100vw - (18.2rem*2));
+
 }
 
 header {
-  background-image: url('../assets/backgrounds/backgroundHeader.png');
-  background-size: cover;
+  /* background-image: url('../assets/backgrounds/backgroundHeader.png');
+  background-size: cover; */
   height: 100vh;
 }
 /* barra de navegação */
 nav {
-  width: 100%;
+  width: calc(100% - (18.2rem*2));
   height: 12.8rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0rem 18.2rem;
   font-family: 'Rubik';
   position: absolute;
+  z-index: 10;
 }
 nav>img {
   width: 23.4rem;
@@ -61,6 +72,11 @@ nav>ul>li:first-child::after {
   width: 100%;
   height: 0.3rem;
   background-color: var(--principal-color);
+}
+nav>ul>li>a {
+  text-decoration: none;
+  
+  color: var(--tertiary-color);
 }
 
 /* Botões de Login e Cadastro do Header */
@@ -91,9 +107,10 @@ nav>div>button{
 .containerHeader {
   height: 80%;
   display: grid;
-  grid-template-columns: 18.2rem 1fr 18.2rem;
-  grid-template-rows: 27rem 50% 50% 27rem;
+  grid-template-columns: var(--margin-left-containers) 1fr var(--margin-right-containers);
+  grid-template-rows: calc(100vh / 4.8) 50% 50% calc(100vh / 4);
   color: var(--tertiary-color);
+  z-index: 10;
 }
 .containerTextHeader {
   grid-column: 2/3;
@@ -102,6 +119,7 @@ nav>div>button{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  z-index: 10;
 }
 .containerTextHeader div>h1{
   font-family: 'Playfair Display';
@@ -117,11 +135,37 @@ nav>div>button{
 
 
 /* Slider do Fundo */
-.sliderHeader {
+.contentSliderHeader {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+.contentSliderHeader img {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  filter: brightness(60%);
+}
+.contentSliderHeader img {
+  opacity: 0;
+}
+.contentSliderHeader img:nth-child(1) {
+  opacity: 1;
+}
+.contentSliderHeader img:nth-child(1) {
+  filter: brightness(100%);
+}
+.menuSliderHeader {
   grid-column: 3;
   grid-row: 2;
   align-self: center;
   justify-self: center;
+  z-index: 10;
 }
 
 
@@ -129,14 +173,16 @@ nav>div>button{
 
 /* Container de texto e Inputs de datas do voo */
 .containerInputsHeader {
+  width: 100%;
   grid-column: 1/3;
   grid-row: 3;
   height: 21.6rem;
   border-radius: 0% 2rem 2rem 0%;
   display: grid;
-  grid-template-columns: 18.2rem 1fr 17rem;
+  grid-template-columns: var(--margin-left-containers) 1fr 17rem;
 
   background-color: var(--principal-color-background);
+  z-index: 10;
 }
 .contentInputsHeader {
   grid-column: 2;
@@ -155,7 +201,8 @@ nav>div>button{
   color: var(--other-color-font);
 }
 .contentInputsHeader div>input {
-  width: 22.5rem;
+  width: 95%;
+  max-width: 22.5rem;
   height: 3.7rem;
   outline: 0;
   background-color: transparent;
@@ -215,17 +262,17 @@ nav>div>button{
 
 /* DESTINATIONS */
 
-.destinations {
+#destinations {
   height: 120.6rem;
 
   display: grid;
-  grid-template-columns: 18.2rem 1fr 18.2rem;
-  grid-template-rows: 14rem 1fr 14rem;
+  grid-template-columns: var(--margin-left-containers) 1fr var(--margin-right-containers);
+  grid-template-rows: var(--margin-top-containers) 1fr var(--margin-bottom-containers);
   justify-content: space-between;
 
   background-color: var(--principal-color-background);
 }
-.destinations .containerButtonsTitleDestin {
+#destinations .containerButtonsTitleDestin {
   grid-column: 2;
   grid-row: 2;
   align-self: flex-start;
@@ -234,7 +281,7 @@ nav>div>button{
   display: flex;
   justify-content: space-between;
 }
-.destinations .containerGalerySliderDestin {
+#destinations .containerGalerySliderDestin {
   grid-column: 2/4;
   grid-row: 2;
   align-self: flex-end;
@@ -353,18 +400,18 @@ nav>div>button{
 
 /* SPECIAL OFFER */
 
-.specialOffer {
+#specialOffer {
   
   height: 117.4rem;
 
   display: grid;
-  grid-template-columns: 18.2rem calc(100vw - (18.2rem*2)) 18.2rem;
-  grid-template-rows: 14rem 1fr 14rem;
+  grid-template-columns: var(--margin-left-containers) var(--fr1-calc-spec-and-destPeople) var(--margin-right-containers);
+  grid-template-rows: var(--margin-top-containers) 1fr var(--margin-bottom-containers);
 
   background-color: var(--principal-color-background);
 }
 
-.specialOffer .containerButtonsTitleSpecial {
+#specialOffer .containerButtonsTitleSpecial {
   grid-column: 2;
   grid-row: 2;
   align-self: flex-start;
@@ -374,7 +421,7 @@ nav>div>button{
   justify-content: space-between;
   align-items: flex-end;
 }
-.specialOffer .containerGalerySpecialOffer {
+#specialOffer .containerGalerySpecialOffer {
   grid-column: 2;
   grid-row: 2;
   align-self: flex-end;
@@ -530,23 +577,23 @@ nav>div>button{
 
 /* BLOG */
 
-.blog {
+#blog {
   height: 141.8rem;
 
   display: grid;
-  grid-template-columns: 18.2rem 1fr 18.2rem;
-  grid-template-rows: 14rem 1fr 14rem;
+  grid-template-columns: var(--margin-left-containers) 1fr var(--margin-right-containers);
+  grid-template-rows: var(--margin-top-containers) 1fr var(--margin-bottom-containers);
 
   background-color: var(--principal-color-background);
 }
-.blog .containerTitleBlog {
+#blog .containerTitleBlog {
   grid-column: 2;
   grid-row: 2;
 
   align-self: flex-start;
   height: 16.5rem;
 }
-.blog .containerBlogTextImg {
+#blog .containerBlogTextImg {
   grid-column: 2;
   grid-row: 2;
 
@@ -597,6 +644,7 @@ nav>div>button{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .contentBlogText {
   height: 66rem;
@@ -635,17 +683,17 @@ nav>div>button{
 
 
 /* TRIP PLANNERS */
-.tripPlanners {
+#tripPlanners {
   height: 82.5rem;
 
   display: grid;
-  grid-template-columns: 18.2rem 1fr 2fr 18.2rem;
-  grid-template-rows: 14rem 1fr 14rem;
+  grid-template-columns: var(--margin-left-containers) 1fr 2fr var(--margin-right-containers);
+  grid-template-rows: var(--margin-top-containers) 1fr var(--margin-bottom-containers);
 
   background-color: var(--principal-color-background);
 }
 
-.tripPlanners .containerTitleTripPlanners {
+#tripPlanners .containerTitleTripPlanners {
   grid-column: 2;
   grid-row: 2;
   align-self: flex-end;
@@ -655,7 +703,7 @@ nav>div>button{
   width: 39.4rem;
   padding-bottom: 2.8rem;
 }
-.tripPlanners .containerGaleryTripPlanners {
+#tripPlanners .containerGaleryTripPlanners {
   grid-column: 3/10;
   grid-row: 2;
 
@@ -833,17 +881,17 @@ nav>div>button{
 
 /* DESTINATION GALLERY PEOPLES */
 
-.destinGaleryPeoples {
+#destinGaleryPeoples {
   height: 119rem;
 
   display: grid;
-  grid-template-columns: 18.2rem calc(100vw - (18.2rem*2)) 18.2rem;
-  grid-template-rows: 14rem 1fr 14rem;
+  grid-template-columns: var(--margin-left-containers) var(--fr1-calc-spec-and-destPeople) var(--margin-right-containers);
+  grid-template-rows: var(--margin-top-containers) 1fr var(--margin-bottom-containers);
 
   background-color: var(--principal-color-background);
 }
 
-.destinGaleryPeoples .containerButtonsTitleDestinPeoples {
+#destinGaleryPeoples .containerButtonsTitleDestinPeoples {
   grid-column: 2;
   grid-row: 2;
   align-self: flex-start;
@@ -853,7 +901,7 @@ nav>div>button{
   justify-content: space-between;
   align-items: flex-end;
 }
-.destinGaleryPeoples .containerGalerySliderDestinPeoples {
+#destinGaleryPeoples .containerGalerySliderDestinPeoples {
   grid-column: 2;
   grid-row: 2;
   align-self: flex-end;
@@ -948,17 +996,17 @@ nav>div>button{
 
 
 /* TRAVELER’S EXPERIENCES */
-.travelerExperiences {
+#travelerExperiences {
   height: 123.8rem;
 
   display: grid;
-  grid-template-columns: 18.2rem 1fr 18.2rem;
-  grid-template-rows: 14rem 1fr 24rem;
+  grid-template-columns: var(--margin-left-containers) 1fr var(--margin-right-containers);
+  grid-template-rows: var(--margin-top-containers) 1fr 24rem;
 
   background-color: var(--principal-color-background);
 }
 
-.travelerExperiences .containerTitleTravelerExperiences {
+#travelerExperiences .containerTitleTravelerExperiences {
   grid-column: 2;
   grid-row: 2;
   align-self: flex-start;
@@ -967,7 +1015,7 @@ nav>div>button{
   display: flex;
   align-items: center;
 }
-.travelerExperiences .containerComentsClients {
+#travelerExperiences .containerComentsClients {
   grid-column: 2/4;
   grid-row: 2;
   align-self: center;
@@ -991,7 +1039,7 @@ nav>div>button{
   pointer-events: none;
 }
 
-.travelerExperiences .containerButtonsSliderTravelerExperiences {
+#travelerExperiences .containerButtonsSliderTravelerExperiences {
   grid-column: 2;
   grid-row: 2;
   align-self: flex-end;

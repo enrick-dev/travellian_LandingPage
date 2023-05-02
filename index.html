@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/responsive_media.css">
 
   <title>Travellian</title>
 </head>
@@ -15,11 +16,11 @@
     <nav>
       <img src="./assets/logo_and_icons/logo.svg" alt="Logo Travellian">
       <ul>
-        <li>Home</li>
-        <li>Explore</li>
-        <li>Travel</li>
-        <li>Blog</li>
-        <li>Pricing</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#destinations">Explore</a></li>
+        <li><a href="#specialOffer">Pricing</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#travelerExperiences">Travel</a></li>
       </ul>
       <div>
         <a href="#" class="loginHeader">Login</a>
@@ -36,9 +37,18 @@
         <p>The best travel for your jouney begins now</p>
       </div>
 
-      <div class="sliderHeader">
+      <!-- Slider e menu do Header -->
+      <div class="contentSliderHeader">
+        <img src="./assets/backgrounds/backgroundHeader.png">
+        <img src="./assets/backgrounds/berna-suica.jpeg">
+        <img src="./assets/backgrounds/ruas-de-graz-na-austria.jpeg">
+        <img src="./assets/backgrounds/trem-na-suica.jpeg">
+        <img src="./assets/backgrounds/vienna-austria.jpeg">
+      </div>
+      <div class="menuSliderHeader">
         <img src="./assets/sliders/sliderHeader.svg" alt="Slider">
       </div>
+      <script src="./js/slider_home.js"></script>
 
       <form action="#" class="containerInputsHeader">
         <div class="contentInputsHeader">
@@ -60,17 +70,16 @@
           </div>
         </div>
         
-          <div class="bookNow">
-            <input type="submit" value="">
-              <h2>Book</br>Now</h2>
-          </div>
-        </form>
-      </div>
+        <div class="bookNow">
+          <input type="submit" value="">
+            <h2>Book</br>Now</h2>
+        </div>
+      </form>
     </div>
   </header>
 
   <main>
-    <section class="destinations">
+    <section id="destinations">
       <div class="containerButtonsTitleDestin">
         <div class="containerTitleDestin">
           <h1>Popular Destinations</h1>
@@ -132,7 +141,7 @@
       </div>
     </section>
 
-    <section class="specialOffer">
+    <section id="specialOffer">
       <div class="containerButtonsTitleSpecial">
         <div class="buttonsSliderSpecial">
           <button id="left"><img src="./assets/sliders/iconArrowGalerySlider.svg" alt="Icone para deslizar imagens da galeria"></button>
@@ -313,7 +322,7 @@
       </div>
     </section>
 
-    <section class="blog">
+    <section id="blog">
       <div class="containerTitleBlog">
         <div class="contentTitleBlog">
           <h1>Our Blog</h1>
@@ -339,7 +348,7 @@
       </div>
     </section>
 
-    <section class="tripPlanners">
+    <section id="tripPlanners">
       <div class="containerTitleTripPlanners">
         <div class="contentTitleTripPlanners">
           <h1>Trip Planners</h1>
@@ -428,7 +437,7 @@
       </div>
     </section>
 
-    <section class="destinGaleryPeoples">
+    <section id="destinGaleryPeoples">
       <div class="containerButtonsTitleDestinPeoples">
         <div class="containerTitleDestinPeoples">
           <h1>Destination Gallery</h1>
@@ -470,7 +479,7 @@
 
     </section>
 
-    <section class="travelerExperiences">
+    <section id="travelerExperiences">
       <div class="containerTitleTravelerExperiences">
         <div class="contentTitleTravelerExperiences">
           <h1>Traveler’s Experiences</h1>
