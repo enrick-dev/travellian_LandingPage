@@ -19,9 +19,13 @@ html {
   --tertiary-color-background: #FF7757 ;
   --other-color-background: #FFF8F1 ;
 
+  
+  --margin-top-containers: 14rem;
+  --margin-bottom-containers: 14rem;
   --margin-left-containers: 18.2rem;
   --margin-right-containers: 18.2rem;
   --fr1-calc-spec-and-destPeople: calc(100vw - (18.2rem*2));
+
 }
 
 header {
@@ -263,7 +267,7 @@ nav>div>button{
 
   display: grid;
   grid-template-columns: var(--margin-left-containers) 1fr var(--margin-right-containers);
-  grid-template-rows: 14rem 1fr 14rem;
+  grid-template-rows: var(--margin-top-containers) 1fr var(--margin-bottom-containers);
   justify-content: space-between;
 
   background-color: var(--principal-color-background);
@@ -402,7 +406,7 @@ nav>div>button{
 
   display: grid;
   grid-template-columns: var(--margin-left-containers) var(--fr1-calc-spec-and-destPeople) var(--margin-right-containers);
-  grid-template-rows: 14rem 1fr 14rem;
+  grid-template-rows: var(--margin-top-containers) 1fr var(--margin-bottom-containers);
 
   background-color: var(--principal-color-background);
 }
@@ -578,7 +582,7 @@ nav>div>button{
 
   display: grid;
   grid-template-columns: var(--margin-left-containers) 1fr var(--margin-right-containers);
-  grid-template-rows: 14rem 1fr 14rem;
+  grid-template-rows: var(--margin-top-containers) 1fr var(--margin-bottom-containers);
 
   background-color: var(--principal-color-background);
 }
@@ -640,6 +644,7 @@ nav>div>button{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .contentBlogText {
   height: 66rem;
@@ -683,7 +688,7 @@ nav>div>button{
 
   display: grid;
   grid-template-columns: var(--margin-left-containers) 1fr 2fr var(--margin-right-containers);
-  grid-template-rows: 14rem 1fr 14rem;
+  grid-template-rows: var(--margin-top-containers) 1fr var(--margin-bottom-containers);
 
   background-color: var(--principal-color-background);
 }
@@ -881,7 +886,7 @@ nav>div>button{
 
   display: grid;
   grid-template-columns: var(--margin-left-containers) var(--fr1-calc-spec-and-destPeople) var(--margin-right-containers);
-  grid-template-rows: 14rem 1fr 14rem;
+  grid-template-rows: var(--margin-top-containers) 1fr var(--margin-bottom-containers);
 
   background-color: var(--principal-color-background);
 }
@@ -996,7 +1001,7 @@ nav>div>button{
 
   display: grid;
   grid-template-columns: var(--margin-left-containers) 1fr var(--margin-right-containers);
-  grid-template-rows: 14rem 1fr 24rem;
+  grid-template-rows: var(--margin-top-containers) 1fr 24rem;
 
   background-color: var(--principal-color-background);
 }
