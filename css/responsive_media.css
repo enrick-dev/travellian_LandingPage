@@ -1,21 +1,28 @@
+@media (max-width: 1650px) {
+  :root {
+    --margin-left-containers: 3.2rem;
+    --margin-right-containers: 3.2rem;
+    --fr1-calc-spec-and-destPeople: calc(100vw - (3.2rem*2));
+  }
+  
+  nav {
+    width: calc(100% - (3.2rem*2));
+    padding: 0rem 3.2rem;
+  }
+}
 @media (max-width: 1600px) {
   .contentBlogText>p {
     line-height: 4.2rem;
   }
 }
 @media (max-width: 1440px) {
-  :root {
-    --margin-left-containers: 3.2rem;
-    --margin-right-containers: 3.2rem;
-    --fr1-calc-spec-and-destPeople: calc(100vw - (3.2rem*2));
-  }
-  nav {
-    width: calc(100% - (3.2rem*2));
-    padding: 0rem 3.2rem;
-  }
 
   .containerInputsHeader {
     width: 85%;
+  }
+  .contentInputsHeader div>input {
+    max-width: 19.57rem;
+    font-size: 1.8rem;
   }
 
   .contentGalerySpecialOffer figure {
@@ -29,6 +36,37 @@
 
   .newsletter {
     width: 118rem;
+  }
+
+    
+  .contentGalerySliderDestinPeoples {
+    height: 54.3rem;
+  }
+  
+  .contentGalerySliderDestinPeoples figure{
+    width: 32rem;
+    height: 46.9rem;
+  }
+  .contentGalerySliderDestinPeoples figure:hover {
+    transform: translateY(-3.7rem);
+  }
+  .contentGalerySliderDestinPeoples figure>img {
+    width: 32rem;
+    height: 46.9rem;
+  }
+  
+    
+  #travelerExperiences .containerComentsClients {
+    height: calc(33.6rem + 7.5rem) ;
+  }
+  .containerComentsTravelerExperiences {
+    width: 56.2rem;
+    height: 33.6rem;
+  }
+  .containerComentsTravelerExperiences>p {
+    width: 56.2rem;
+    font-family: 'Rubik';
+    font-size: 1.8rem;
   }
 
 
@@ -55,7 +93,7 @@
     --margin-bottom-containers: 10rem;
   }
 
-  .containerTextHeader div>h1{
+  .containerTextHeader>div>h1{
     font-size: 6.4rem;
   }
   .containerInputsHeader {
@@ -145,7 +183,23 @@
   }
 
   .newsletter {
-    width: 108rem;
+    width: 95%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .newsletter>h2 {
+    font-size: 5.4rem;
+    padding-left: 5%;
+  }
+  .newsletter>form {
+    align-self: center;
+    width:90%;
+  }
+  .newsletter>form>div {
+    justify-content: space-between;
+  }
+  .newsletter>form>div>input:first-child {
+    width: 70%;
   }
 
 
@@ -169,3 +223,72 @@
   }
 
 }
+
+@media (max-width: 1050px) {
+  nav {
+    justify-content: space-between;
+  }
+  nav>ul, nav>div:nth-child(3) {
+    display: none;
+  }
+  .menuMobile {
+    visibility: visible;
+    display: flex;
+  }
+
+  .contentInputsHeader {
+    justify-content: space-around;
+    align-items: center;
+  }
+  .contentInputsHeader div>input {
+    max-width: 15.85rem;
+    font-size: 1.6rem;
+  }
+
+  .contentBlogText {
+    justify-content: space-around;
+  }
+  .contentBlogText>p {
+    line-height: 4rem;
+  }
+
+  footer {
+    height: 113.4rem;
+  }
+  .contentFooter {
+    width: 80%;
+    height: 89.46rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 950px) {
+  :root {
+    --title-sections: 5.4rem;
+  }
+
+  .containerTextHeader>p{
+    font-size: 2.2rem;
+  }
+
+  .contentInputsHeader {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contentBlogText>h3 {
+    font-size: 5rem;
+  }
+  .contentBlogText>p {
+    line-height: 3.3rem;
+  }
+
+  .containerTitleDestin>p, .containerTitleSpecial>p, .contentTitleBlog>p, .contentTitleTripPlanners>p, .containerTitleDestinPeoples>p, .contentTitleTravelerExperiences>p {
+    font-size: 1.8rem;
+  }
+}
+
+
+

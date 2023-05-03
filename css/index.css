@@ -19,7 +19,7 @@ html {
   --tertiary-color-background: #FF7757 ;
   --other-color-background: #FFF8F1 ;
 
-  
+  --title-sections: 6.4rem;
   --margin-top-containers: 14rem;
   --margin-bottom-containers: 14rem;
   --margin-left-containers: 18.2rem;
@@ -98,6 +98,19 @@ nav>div>button{
   background-color: var(--principal-color);
   border: none;
   border-radius: 1.2rem;
+}
+
+/* Menu Mobile */
+.menuMobile {
+  position: relative;
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+.menuMobile>img {
+  position: absolute;
+  cursor: pointer;
+  z-index: 20;
 }
 
 
@@ -296,7 +309,7 @@ nav>div>button{
 }
 .containerTitleDestin h1 {
   font-family: 'Playfair Display';
-  font-size: 6.4rem;
+  font-size: var(--title-sections);
   user-select: all;
   color: var(--secondary-color);
 }
@@ -438,7 +451,7 @@ nav>div>button{
 }
 .containerTitleSpecial h1 {
   font-family: 'Playfair Display';
-  font-size: 6.4rem;
+  font-size: var(--title-sections);
   user-select: all;
   color: var(--secondary-color);
 }
@@ -609,7 +622,7 @@ nav>div>button{
 }
 .contentTitleBlog h1 {
   font-family: 'Playfair Display';
-  font-size: 6.4rem;
+  font-size: var(--title-sections);
   user-select: all;
   color: var(--secondary-color);
 }
@@ -721,7 +734,7 @@ nav>div>button{
 }
 .contentTitleTripPlanners h1 {
   font-family: 'Playfair Display';
-  font-size: 6.4rem;
+  font-size: var(--title-sections);
   user-select: all;
   color: var(--secondary-color);
 }
@@ -916,7 +929,7 @@ nav>div>button{
 }
 .containerTitleDestinPeoples h1 {
   font-family: 'Playfair Display';
-  font-size: 6.4rem;
+  font-size: var(--title-sections);
   user-select: all;
   color: var(--secondary-color);
 }
@@ -1057,7 +1070,7 @@ nav>div>button{
 }
 .contentTitleTravelerExperiences h1 {
   font-family: 'Playfair Display';
-  font-size: 6.4rem;
+  font-size: var(--title-sections);
   user-select: all;
   color: var(--secondary-color);
 }
