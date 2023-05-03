@@ -273,6 +273,7 @@
   }
 
   .contentInputsHeader {
+    padding: 0rem 4rem;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -288,6 +289,208 @@
   .containerTitleDestin>p, .containerTitleSpecial>p, .contentTitleBlog>p, .contentTitleTripPlanners>p, .containerTitleDestinPeoples>p, .contentTitleTravelerExperiences>p {
     font-size: 1.8rem;
   }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --margin-top-containers: 8rem;
+    --margin-bottom-containers: 8rem;
+    --margin-left-containers: 2rem;
+    --margin-right-containers: 2rem;
+    --fr1-calc-spec-and-destPeople: calc(100vw - (2rem*2));
+  }
+
+
+  
+  .contentInputsHeader {
+    padding: 0rem 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+  
+  
+  #destinations .containerButtonsTitleDestin {
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: auto;
+  }
+  #destinations .containerGalerySliderDestin {
+    align-self: center;
+  }
+  .buttonsSliderDestin {
+    width: 16rem;
+    justify-content: space-between;
+    align-self: center;
+  }
+  .contentGalerySliderDestin figure {
+    width: var(--fr1-calc-spec-and-destPeople);
+    margin-right: 3.2rem;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+  }
+  .contentGalerySliderDestin figure>img {
+    width: var(--fr1-calc-spec-and-destPeople);
+    height: 45.6rem;
+    object-fit: cover;
+    border-radius: 2.6rem;
+  }
+
+
+
+  #specialOffer .containerButtonsTitleSpecial {
+    height: 100%;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-self: auto;
+  }
+  #specialOffer .containerGalerySpecialOffer {
+    align-self: center;
+  }
+  .containerTitleSpecial {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 16.5rem;
+  }
+  .buttonsSliderSpecial {
+    width: 16rem;
+    justify-content: space-between;
+    align-self: center;
+  }
+  .contentGalerySpecialOffer figure {
+    width: var(--fr1-calc-spec-and-destPeople);
+    height: 56rem;
+  }
+  .contentGalerySpecialOffer figure>img {
+    width: var(--fr1-calc-spec-and-destPeople);
+    height: 28.6rem;
+  }
+  .valueAndButton div {
+    width: 13.6rem;
+  }
+  .valueAndButton div>p {
+    font-size: 1.8rem;
+  }
+  .valueAndButton div>p:last-child {
+    font-size: 3.2rem;
+  }
+
+
+
+  #blog .containerBlogTextImg {
+    align-self: flex-end;
+  }
+  .contentBlogTextImg {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .containerBlogImg {
+    width: 100%;
+    height: 55.5rem;
+  }
+  .containerBlogText {
+    width: 100%;
+  }
+  .contentBlogText {
+    margin-top: 2.5rem;
+    height: 53.8rem;
+    justify-content: space-around;
+  }
+  .contentBlogText>h3 {
+    font-size: 5.4rem;
+  }
+  .contentBlogText>p {
+    font-size: 1.8rem;
+    line-height: 4.2rem;
+  }
+  .contentBlogText>button {
+    font-size: 2.4rem;
+  }
+
+
+
+  #tripPlanners {
+    grid-template-columns: var(--margin-left-containers) 1fr var(--margin-right-containers);
+    grid-template-rows: var(--margin-top-containers) 1fr var(--margin-bottom-containers);
+  }
+  
+  #tripPlanners .containerTitleTripPlanners {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: flex-start;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  #tripPlanners .containerGaleryTripPlanners {
+    grid-column: 2;
+    grid-row: 2;
+
+    height: 217.2rem;
+    align-self: flex-end;
+  }
+  .contentGaleryTripPlanners {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contentGaleryTripPlanners>figure {
+    margin-top: 3.2rem;
+    margin-left: 0rem;
+    width: var(--fr1-calc-spec-and-destPeople);
+    height: 51.3rem;
+    display: flex;
+    
+  }
+  .contentGaleryTripPlanners>figure:first-child {
+    margin-top: 0rem;
+  }
+  .contentGaleryTripPlanners>figure>img {
+    align-self: flex-start;
+    width: 100%;
+    height: 35rem;
+  }
+  .contentGaleryTripPlanners>figure:hover>img {
+    transform: none;
+  }
+  .contentGaleryTripPlanners figure:hover>figcaption{
+    transform: translateY( calc(140%));
+  }
+  .contentGaleryTripPlanners figure>figcaption {
+    transform: translateY( calc(140%));
+  }
+
+
+
+
+
+  
+  #destinations {
+    height: 104.8rem;
+  }
+  #specialOffer {
+    height: 113.2rem;
+  }
+  #blog {
+    height: 153.7rem;
+  }
+  #tripPlanners {
+    height: 276.4rem;
+  }
+  #destinGaleryPeoples {
+    height: 89.1rem;
+  }
+  #travelerExperiences {
+    height: 120.4rem;
+  }
+
 }
 
 

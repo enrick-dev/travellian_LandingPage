@@ -354,7 +354,7 @@ nav>div>button{
 
 /* Galeria de imagens do "Detinations"  */
 .contentGalerySliderDestin {
-  width: 100%;
+  width: var(--fr1-calc-spec-and-destPeople);
   display: flex;
   scroll-behavior: smooth;
   overflow: hidden;
@@ -830,6 +830,7 @@ nav>div>button{
 .contentGaleryTripPlanners>figure>img {
   align-self: center;
   z-index: 10;
+  object-fit: cover;
 
   width: 30rem;
   height: 39.9rem;
