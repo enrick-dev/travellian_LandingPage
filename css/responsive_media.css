@@ -320,6 +320,9 @@
   #destinations .containerGalerySliderDestin {
     align-self: center;
   }
+  .containerTitleDestin {
+    height: 15.2rem;
+  }
   .buttonsSliderDestin {
     width: 16rem;
     justify-content: space-between;
@@ -356,7 +359,7 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
-    height: 16.5rem;
+    height: 15.2rem;
   }
   .buttonsSliderSpecial {
     width: 16rem;
@@ -382,7 +385,9 @@
   }
 
 
-
+  #blog .containerTitleBlog {
+    height: 15.2rem;
+  }
   #blog .containerBlogTextImg {
     align-self: flex-end;
   }
@@ -469,7 +474,88 @@
 
 
 
+  #destinGaleryPeoples .containerButtonsTitleDestinPeoples {
+    align-self: flex-start;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #destinGaleryPeoples .containerGalerySliderDestinPeoples {
+    align-self: center;
+  }
+  .containerTitleDestinPeoples {
+    align-self: flex-start;
+    height: 15.2rem;
+  }
+  .buttonsSliderDestinPeoples {
+    width: 16rem;
+    align-self: center;
+  }
+  
+  .contentGalerySliderDestinPeoples {
+    width: 100%;
+    height: 155rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    cursor: grab;
+  }
+  .contentGalerySliderDestinPeoples figure{
+    width: 100%;
+    height: 35.1rem;
+    margin-bottom: 3.2rem;
+    align-self: center;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .contentGalerySliderDestinPeoples figure:last-child {
+    margin-bottom: 0rem;
+  }
+  .contentGalerySliderDestinPeoples figure:hover {
+    transform: translateY(0rem);
+  }
+  .contentGalerySliderDestinPeoples figure>img {
+    width: 100%;
+    height: 35.1rem;
+    border-radius: 2.6rem;
+    cursor: pointer;
+  }
 
+
+
+  #travelerExperiences .containerTitleTravelerExperiences {
+    height: 15.2rem;
+    align-items: center;
+  }
+  
+  #travelerExperiences .containerComentsClients {
+    margin-top: 9rem;
+    align-self: center;
+
+    height: calc(35.9rem + 7.5rem) ;
+  }
+  #travelerExperiences .containerButtonsSliderTravelerExperiences {
+    flex-direction: column;
+  }
+  .containerComentsTravelerExperiences {
+    width: 50rem;
+    height: 35.9rem;
+
+  }
+  .buttonsSliderTravelerExperiences {
+    width: 16rem;
+    align-self: center;
+  }
+
+
+
+  .newsletter {
+    top: calc(-32.4rem /1.5);
+    height: 32.4rem;
+  }
+  .newsletter>h2 {
+    font-size: 5.4rem;
+  }
 
   
   #destinations {
@@ -485,11 +571,25 @@
     height: 276.4rem;
   }
   #destinGaleryPeoples {
-    height: 89.1rem;
+    height: 207.2rem;
   }
   #travelerExperiences {
-    height: 120.4rem;
+    height: 105.1rem;
   }
+
+}
+@media (max-width: 730px) {
+  .newsletter>form>div>input:first-child {
+    width: 60%;
+  }
+}
+@media (max-width: 620px) {
+
+
+
+
+
+
 
 }
 
