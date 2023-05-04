@@ -1004,6 +1004,7 @@ nav>div>button{
   width: 36.5rem;
   height: 57rem;
   border-radius: 2.6rem;
+  object-fit: cover;
   cursor: pointer;
 }
 
