@@ -630,8 +630,8 @@
     font-size: 1.4rem;
   }
   .contentInputsHeader div>input {
-    width: 100%;
-    max-width: 24.8rem;
+    width: 30rem;
+    max-width: 100%;
     height: 2.9rem;
     font-size: 1.4rem;
   }
@@ -712,6 +712,7 @@
 @media (max-width: 500px) {
   .newsletter>form>div>input:first-child {
     text-indent: 2rem;  
+  }
 }
 @media (max-width: 485px) {
   .containerInputsHeader {
@@ -726,35 +727,152 @@
   :root {
     --title-sections: 5rem;
   }
+
+  .containerTextHeader {
+    height: 21.7rem;
+  }
+  .containerTextHeader div>h1{
+    font-size: 4.5rem;
+  }
+  .containerTextHeader p {
+    font-size: 1.8rem;
+  }
+  .containerInputsHeader {
+    width: 95%;
+  }
+  .contentInputsHeader div>input {
+    width: 26rem;
+  }
+
+
+
+
+  .containerTitleDestin {
+    height: 22.1rem;
+  }
+  .containerTitleSpecial {
+    height: 14.7rem;
+  }
+  .contentTitleBlog {
+    height: 14.7rem;
+  }
+  .contentTitleTripPlanners {
+    height: 21rem;
+  }
+  .containerTitleDestinPeoples {
+    height: 17.9rem;
+  }
+  .contentTitleTravelerExperiences {
+    height: 22.2rem;
+  }
   .containerTitleDestin>p, .containerTitleSpecial>p, .contentTitleBlog>p, .contentTitleTripPlanners>p, .containerTitleDestinPeoples>p, .contentTitleTravelerExperiences>p {
     font-size: 1.6rem;
   }
+  
+
+  #blog .containerBlogTextImg {
+    align-self: flex-end;
+  }
+  .contentBlogTextImg {
+    height: 95rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .containerBlogImg {
+    width: 100%;
+    height: 31.4rem;
+  }
+  .contentBlogText>h3 {
+    font-size: 4rem;
+  }
+  .contentBlogText>p {
+    font-size: 1.8rem;
+    line-height: 3.8rem;
+  }
+  .contentBlogText>button {
+    font-size: 2.2rem;
+  }
+
 
   
-.containerTitleDestin .breatherBarDestin {
-  width: 22.7rem;
-  height: 0.3rem;
-}
-.containerTitleSpecial .breatherBarSpecial {
-  width: 21rem;
-  height: 0.3rem;
-}
-.contentTitleBlog .breatherBarBlog {
-  width: 13rem;
-  height: 0.3rem;
-}
-.contentTitleTripPlanners .breatherBarTripPlanners {
-  width: 22rem;
-  height: 0.3rem;
-}
-.containerTitleDestinPeoples .breatherBarDestinPeoples {
-  width: 24rem;
-  height: 0.3rem;
-}
-.contentTitleTravelerExperiences .breatherBarTravelerExperiences {
-  width: 30rem;
-  height: 0.3rem;
-}
+  .contentGalerySliderDestin figure {
+    margin-right: 3.2rem;
+  }
+  .contentGalerySliderDestin figure>img {
+    height: 32rem;
+    border-radius: 1.6rem;
+  }
+
+
+  #tripPlanners .containerTitleTripPlanners {
+    width: 100%;
+  }
+  #tripPlanners .containerGaleryTripPlanners {
+    height: 198.84rem;
+    align-self: flex-end;
+  }
+  .contentGaleryTripPlanners>figure {
+    height: 46.6rem;
+    margin-bottom: 4rem;
+  }
+  .contentGaleryTripPlanners>figure>img {
+    height: 32rem;
+  }
+  .contentGaleryTripPlanners figure>figcaption{
+    transform: translateY(120%);
+  }
+  .contentGaleryTripPlanners figure:hover>figcaption{
+    transform: translateY(120%);
+  }
+
+
+  /* Todas barras de Respiro */
+  .containerTitleDestin .breatherBarDestin {
+    width: 22.7rem;
+    height: 0.3rem;
+  }
+  .containerTitleSpecial .breatherBarSpecial {
+    width: 21rem;
+    height: 0.3rem;
+  }
+  .contentTitleBlog .breatherBarBlog {
+    width: 13rem;
+    height: 0.3rem;
+  }
+  .contentTitleTripPlanners .breatherBarTripPlanners {
+    width: 22rem;
+    height: 0.3rem;
+  }
+  .containerTitleDestinPeoples .breatherBarDestinPeoples {
+    width: 24rem;
+    height: 0.3rem;
+  }
+  .contentTitleTravelerExperiences .breatherBarTravelerExperiences {
+    width: 30rem;
+    height: 0.3rem;
+  }
+
+
+
+  
+  #destinations {
+    height: 96.1rem;
+  }
+  #specialOffer {
+    height: 116.2rem;
+  }
+  #blog {
+    height: 130rem;
+  }
+  #tripPlanners {
+    height: 255.7rem;
+  }
+  #destinGaleryPeoples {
+    height: 207.2rem;
+  }
+  #travelerExperiences {
+    height: 105.1rem;
+  }
 
 }
 
