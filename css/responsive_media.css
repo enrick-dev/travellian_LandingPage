@@ -962,6 +962,16 @@
     --title-sections: 4rem;
   }
 
+  
+  nav>img {
+    width: 14rem;
+    height: 2.75rem;
+  }
+  .menuMobile>img {
+    width: calc(3.8rem/1.2);
+    height: calc(2.4rem/1.2);
+  }
+
   .containerTextHeader div>h1{
     font-size: 4rem;
   }
