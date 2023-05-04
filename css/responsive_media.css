@@ -905,7 +905,7 @@
 
 
   .newsletter {
-    top: calc(-32.4rem /1.5);
+    top: calc(-46.3rem /1.3);
     height: 46.3rem;
   }
   .newsletter>h2 {
@@ -952,9 +952,59 @@
     height: 207.2rem;
   }
   #travelerExperiences {
-    height: 110rem;
+    height: 130rem;
+    grid-template-rows: var(--margin-top-containers) 1fr 40rem;
   }
 
 }
+@media (max-width: 360px) {
+  :root {
+    --title-sections: 4rem;
+  }
+
+  .containerTextHeader div>h1{
+    font-size: 4rem;
+  }
+  .containerTextHeader p {
+    font-size: 1.6rem;
+  }
+  .containerInputsHeader {
+    width: 95%;
+  }
+  .contentInputsHeader div>input {
+    width: 100%;
+    max-width: 24.8rem;
+  }
+
+
+  .contentTitleTravelerExperiences .breatherBarTravelerExperiences {
+    width: 18rem;
+    height: 0.3rem;
+  }
+  .contentTitleTravelerExperiences p {
+    font-family: 'Rubik';
+    font-size: 2.4rem;
+    color: var(--other-color-font);
+  }
+
+
+  
+
+  
+  #travelerExperiences .containerComentsClients {
+    margin-top: 10rem;
+    height: calc(46.6rem + 7.5rem) ;
+  }
+  .containerComentsTravelerExperiences {
+    width: 22rem;
+    height: 46.6rem;
+
+  }
+  .containerComentsTravelerExperiences>p {
+    width: 22rem;
+  }
+
+}
+
 
 
