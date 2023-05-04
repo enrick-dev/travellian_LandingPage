@@ -290,7 +290,6 @@
     font-size: 1.8rem;
   }
 }
-
 @media (max-width: 768px) {
   :root {
     --margin-top-containers: 8rem;
@@ -585,13 +584,178 @@
 }
 @media (max-width: 620px) {
 
+  :root {
+    --margin-left-containers: 1.6rem;
+    --margin-right-containers: 1.6rem;
+    --fr1-calc-spec-and-destPeople: calc(100vw - (1.6rem*2));
+  }
+
+  header {
+    height: 121rem;
+  }
+  
+  .containerHeader {
+    height: 80%;
+    display: grid;
+    grid-template-columns: var(--margin-left-containers) 1fr var(--margin-right-containers);
+    grid-template-rows: calc(100vh / 4.8) 50% 50% calc(100vh / 4);
+    color: var(--tertiary-color);
+    z-index: 10;
+  } 
+  .menuSliderHeader {
+    display: none;
+  }
+
+  .containerInputsHeader {
+    width: 80%;
+    height: 59.5rem;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    grid-template-columns: 1fr;
+    grid-template-rows: var(--margin-left-containers) 1fr 17rem;
+    margin: 0 auto;
+    align-self: flex-end;
+    border-radius: 2rem;
+  }
+  .contentInputsHeader {
+    grid-column: 1;
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .contentInputsHeader div>label {
+    font-size: 1.4rem;
+  }
+  .contentInputsHeader div>input {
+    width: 100%;
+    max-width: 24.8rem;
+    height: 2.9rem;
+    font-size: 1.4rem;
+  }
+  .contentInputsHeader div:nth-child(4)>input {
+    font-size: 1.4rem;
+  }
+  .bookNow {
+    display: none;
+  }
+  .bookNowMobile{
+    grid-column: 1;
+    grid-row: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 0% 0% 2rem 2rem ;
+
+    background-color: var(--principal-color);
+  }
+  .bookNowMobile h2 {
+    width: 21.5rem;
+  }
 
 
 
+  
+  .contentGaleryTripPlanners figure:hover>figcaption{
+    transform: translateY( calc(130%));
+  }
+  .contentGaleryTripPlanners figure>figcaption {
+    transform: translateY( calc(130%));
+  }
 
+
+
+  
+  #travelerExperiences .containerTitleTravelerExperiences {
+    height: 15.2rem;
+    align-items: center;
+  }
+  
+  #travelerExperiences .containerComentsClients {
+    margin-top: 9rem;
+    align-self: center;
+
+    height: calc(35.9rem + 7.5rem) ;
+  }
+  #travelerExperiences .containerButtonsSliderTravelerExperiences {
+    flex-direction: column;
+  }
+  .containerComentsTravelerExperiences {
+    width: 100%;
+    height: 35.9rem;
+
+  }
+  .containerComentsTravelerExperiences>p {
+    width: 32rem;
+  }
+  .buttonsSliderTravelerExperiences {
+    width: 16rem;
+    align-self: center;
+  }
+  
+
+  /* tamanho de fonts */
+  
+  .containerTextHeader div>h1{
+    font-size: 5.4rem;
+  }
+  .containerTextHeader p {
+    font-size: 2rem;
+  }
 
 
 }
+@media (max-width: 500px) {
+  .newsletter>form>div>input:first-child {
+    text-indent: 2rem;  
+}
+@media (max-width: 485px) {
+  .containerInputsHeader {
+    width: 90%;
+  }
+  .contentBlogText>p {
+    font-size: 1.8rem;
+    line-height: 3.8rem;
+  }
+}
+@media (max-width: 435px) {
+  :root {
+    --title-sections: 5rem;
+  }
+  .containerTitleDestin>p, .containerTitleSpecial>p, .contentTitleBlog>p, .contentTitleTripPlanners>p, .containerTitleDestinPeoples>p, .contentTitleTravelerExperiences>p {
+    font-size: 1.6rem;
+  }
 
+  
+.containerTitleDestin .breatherBarDestin {
+  width: 22.7rem;
+  height: 0.3rem;
+}
+.containerTitleSpecial .breatherBarSpecial {
+  width: 21rem;
+  height: 0.3rem;
+}
+.contentTitleBlog .breatherBarBlog {
+  width: 13rem;
+  height: 0.3rem;
+}
+.contentTitleTripPlanners .breatherBarTripPlanners {
+  width: 22rem;
+  height: 0.3rem;
+}
+.containerTitleDestinPeoples .breatherBarDestinPeoples {
+  width: 24rem;
+  height: 0.3rem;
+}
+.contentTitleTravelerExperiences .breatherBarTravelerExperiences {
+  width: 30rem;
+  height: 0.3rem;
+}
+
+}
 
 
