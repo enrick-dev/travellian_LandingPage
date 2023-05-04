@@ -35,7 +35,8 @@
   }
 
   .newsletter {
-    width: 118rem;
+    width: 98%;
+    max-width: 118rem;
   }
 
     
@@ -84,7 +85,8 @@
 }
 @media (max-width: 1350px) {
   .newsletter {
-    width: 110rem;
+    width: 98%;
+    max-width: 110rem;
   }
 }
 @media (max-width: 1150px) {
@@ -317,7 +319,8 @@
     align-self: auto;
   }
   #destinations .containerGalerySliderDestin {
-    align-self: center;
+    align-self: flex-end;
+    transform: translateY(-13.2rem);
   }
   .containerTitleDestin {
     height: 15.2rem;
@@ -350,7 +353,8 @@
     align-self: auto;
   }
   #specialOffer .containerGalerySpecialOffer {
-    align-self: center;
+    align-self: flex-end;
+    transform: translateY(-12rem);
   }
   .containerTitleSpecial {
     align-self: flex-end;
@@ -367,11 +371,24 @@
   }
   .contentGalerySpecialOffer figure {
     width: var(--fr1-calc-spec-and-destPeople);
-    height: 56rem;
+    height: 45rem;
   }
   .contentGalerySpecialOffer figure>img {
     width: var(--fr1-calc-spec-and-destPeople);
-    height: 28.6rem;
+    height: 20rem;
+  }
+  .legendaImgSpecialOffer>div:first-child {
+    height: 5rem;
+  }
+  .legendaImgSpecialOffer h3 {
+    font-size: 2.5rem;
+  }  
+  .ratingStars img {
+    width: 1.6rem;
+    height: 1.5rem;
+  }
+  .legendaImgSpecialOffer p {
+    font-size: 1.4rem;
   }
   .valueAndButton div {
     width: 13.6rem;
@@ -380,7 +397,7 @@
     font-size: 1.8rem;
   }
   .valueAndButton div>p:last-child {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 
 
@@ -489,6 +506,7 @@
   .buttonsSliderDestinPeoples {
     width: 16rem;
     align-self: center;
+    transform: translateY(-6.6rem);
   }
   
   .contentGalerySliderDestinPeoples {
@@ -558,10 +576,10 @@
 
   
   #destinations {
-    height: 104.8rem;
+    height: 95rem;
   }
   #specialOffer {
-    height: 113.2rem;
+    height: 95rem;
   }
   #blog {
     height: 153.7rem;
@@ -605,6 +623,11 @@
   .menuSliderHeader {
     display: none;
   }
+  
+  /* Slider do Fundo */
+  .contentSliderHeader {
+    height: 121rem;
+  }
 
   .containerInputsHeader {
     width: 80%;
@@ -615,6 +638,7 @@
     grid-template-rows: var(--margin-left-containers) 1fr 17rem;
     margin: 0 auto;
     align-self: flex-end;
+    transform: translateY(-6rem);
     border-radius: 2rem;
   }
   .contentInputsHeader {
@@ -710,17 +734,15 @@
 
 }
 @media (max-width: 500px) {
-  .newsletter>form>div>input:first-child {
-    text-indent: 2rem;  
-  }
-}
-@media (max-width: 485px) {
   .containerInputsHeader {
     width: 90%;
   }
   .contentBlogText>p {
     font-size: 1.8rem;
     line-height: 3.8rem;
+  }
+  .newsletter>form>div>input:first-child {
+    text-indent: 2rem;  
   }
 }
 @media (max-width: 435px) {
@@ -853,13 +875,72 @@
   }
 
 
+  #travelerExperiences .containerTitleTravelerExperiences {
+    height: 15.2rem;
+    align-items: center;
+  }
+  
+  #travelerExperiences .containerComentsClients {
+    margin-top: 9rem;
+    align-self: center;
+
+    height: calc(40rem + 7.5rem) ;
+  }
+  #travelerExperiences .containerButtonsSliderTravelerExperiences {
+    flex-direction: column;
+  }
+  .containerComentsTravelerExperiences {
+    width: 25rem;
+    height: 40rem;
+
+  }
+  .containerComentsTravelerExperiences>p {
+    width: 25rem;
+  }
+  .buttonsSliderTravelerExperiences {
+    width: 16rem;
+    align-self: center;
+  }
+
+
+
+  .newsletter {
+    top: calc(-32.4rem /1.5);
+    height: 46.3rem;
+  }
+  .newsletter>h2 {
+    font-size: 4rem;
+  }
+  .newsletter>form {
+    height: 21.7rem;
+  }
+  .newsletter>form>div {
+    width: 100%;
+    flex-direction: column;
+  }
+  .newsletter>form>div>input {
+    outline: none;
+  }
+  .newsletter>form>div>input:first-child {
+    width: 100%;
+    height: 7.2rem;
+    text-indent: 0rem;
+    text-align: center;
+  }
+  .newsletter>form>div>input:last-child {
+    width: 100%;
+    height: 7.3rem;
+    margin-top: 3.2rem;
+  }
+
+
 
   
   #destinations {
-    height: 96.1rem;
+    height: 90.1rem;
   }
   #specialOffer {
-    height: 116.2rem;
+    height: 95rem;
   }
   #blog {
     height: 130rem;
@@ -871,7 +952,7 @@
     height: 207.2rem;
   }
   #travelerExperiences {
-    height: 105.1rem;
+    height: 110rem;
   }
 
 }
