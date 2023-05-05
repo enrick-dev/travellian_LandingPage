@@ -7,9 +7,6 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-button {
-  user-select: none;
-}
 
 :root {
   --principal-color: #FF7757;
@@ -139,10 +136,12 @@ nav>div>button{
 }
 .containerTextHeader div>h1{
   font-family: 'Playfair Display';
+  user-select: none;
   font-size: 8.4rem;
 }
 .containerTextHeader p {
   font-family: 'Rubik';
+  user-select: none;
   font-size: 2.4rem;
 }
 
@@ -314,6 +313,7 @@ nav>div>button{
 .containerTitleDestin h1 {
   font-family: 'Playfair Display';
   font-size: var(--title-sections);
+  user-select: all;
   color: var(--secondary-color);
 }
 .containerTitleDestin .breatherBarDestin {
@@ -382,7 +382,6 @@ nav>div>button{
   height: 66.1rem;
   object-fit: cover;
   border-radius: 2.6rem;
-  filter: brightness(75%);
 }
 
 .contentGalerySliderDestin figure>figcaption {
@@ -456,6 +455,7 @@ nav>div>button{
 .containerTitleSpecial h1 {
   font-family: 'Playfair Display';
   font-size: var(--title-sections);
+  user-select: all;
   color: var(--secondary-color);
 }
 .containerTitleSpecial .breatherBarSpecial {
@@ -626,6 +626,7 @@ nav>div>button{
 .contentTitleBlog h1 {
   font-family: 'Playfair Display';
   font-size: var(--title-sections);
+  user-select: all;
   color: var(--secondary-color);
 }
 .contentTitleBlog .breatherBarBlog {
@@ -670,6 +671,7 @@ nav>div>button{
 .contentBlogText>h3 {
   font-family: 'Playfair Display';
   font-size: 5.4rem;
+  user-select: all;
   color: var(--secondary-color);
 }
 .contentBlogText>p {
@@ -736,6 +738,7 @@ nav>div>button{
 .contentTitleTripPlanners h1 {
   font-family: 'Playfair Display';
   font-size: var(--title-sections);
+  user-select: all;
   color: var(--secondary-color);
 }
 .contentTitleTripPlanners .breatherBarTripPlanners {
@@ -931,6 +934,7 @@ nav>div>button{
 .containerTitleDestinPeoples h1 {
   font-family: 'Playfair Display';
   font-size: var(--title-sections);
+  user-select: all;
   color: var(--secondary-color);
 }
 .containerTitleDestinPeoples .breatherBarDestinPeoples {
@@ -1072,6 +1076,7 @@ nav>div>button{
 .contentTitleTravelerExperiences h1 {
   font-family: 'Playfair Display';
   font-size: var(--title-sections);
+  user-select: all;
   color: var(--secondary-color);
 }
 .contentTitleTravelerExperiences .breatherBarTravelerExperiences {
